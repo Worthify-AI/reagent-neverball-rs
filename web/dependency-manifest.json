@@ -1,0 +1,434 @@
+[
+  {
+    "name": "adler2",
+    "version": "2.0.1",
+    "license": "0BSD OR MIT OR Apache-2.0",
+    "files": [
+      "licenses/adler2-2.0.1/LICENSE-0BSD",
+      "licenses/adler2-2.0.1/LICENSE-APACHE",
+      "licenses/adler2-2.0.1/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "allocator-api2",
+    "version": "0.2.21",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/allocator-api2-0.2.21/LICENSE-APACHE",
+      "licenses/allocator-api2-0.2.21/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "autocfg",
+    "version": "1.5.1",
+    "license": "Apache-2.0 OR MIT",
+    "files": [
+      "licenses/autocfg-1.5.1/LICENSE-APACHE",
+      "licenses/autocfg-1.5.1/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "bitflags",
+    "version": "1.3.2",
+    "license": "MIT/Apache-2.0",
+    "files": [
+      "licenses/bitflags-1.3.2/LICENSE-APACHE",
+      "licenses/bitflags-1.3.2/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "bytemuck",
+    "version": "1.25.2",
+    "license": "Zlib OR Apache-2.0 OR MIT",
+    "files": [
+      "licenses/bytemuck-1.25.2/LICENSE-ZLIB",
+      "licenses/bytemuck-1.25.2/LICENSE-APACHE",
+      "licenses/bytemuck-1.25.2/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "byteorder",
+    "version": "1.5.0",
+    "license": "Unlicense OR MIT",
+    "files": [
+      "licenses/byteorder-1.5.0/COPYING",
+      "licenses/byteorder-1.5.0/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "cfg-if",
+    "version": "1.0.5",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/cfg-if-1.0.5/LICENSE-APACHE",
+      "licenses/cfg-if-1.0.5/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "color_quant",
+    "version": "1.1.0",
+    "license": "MIT",
+    "files": [
+      "licenses/color_quant-1.1.0/LICENSE"
+    ]
+  },
+  {
+    "name": "core_maths",
+    "version": "0.1.1",
+    "license": "MIT",
+    "files": [
+      "licenses/core_maths-0.1.1/LICENSE"
+    ]
+  },
+  {
+    "name": "crc32fast",
+    "version": "1.5.2",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/crc32fast-1.5.2/LICENSE-APACHE",
+      "licenses/crc32fast-1.5.2/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "equivalent",
+    "version": "1.0.2",
+    "license": "Apache-2.0 OR MIT",
+    "files": [
+      "licenses/equivalent-1.0.2/LICENSE-APACHE",
+      "licenses/equivalent-1.0.2/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "fdeflate",
+    "version": "0.3.7",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/fdeflate-0.3.7/LICENSE-APACHE",
+      "licenses/fdeflate-0.3.7/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "flate2",
+    "version": "1.1.10",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/flate2-1.1.10/LICENSE-APACHE",
+      "licenses/flate2-1.1.10/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "foldhash",
+    "version": "0.1.5",
+    "license": "Zlib",
+    "files": [
+      "licenses/foldhash-0.1.5/LICENSE"
+    ]
+  },
+  {
+    "name": "fontdue",
+    "version": "0.9.4",
+    "license": "MIT OR Apache-2.0 OR Zlib",
+    "files": [
+      "licenses/fontdue-0.9.4/LICENSE-ZLIB",
+      "licenses/fontdue-0.9.4/LICENSE-APACHE",
+      "licenses/fontdue-0.9.4/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "glam",
+    "version": "0.27.0",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/glam-0.27.0/LICENSE-APACHE",
+      "licenses/glam-0.27.0/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "hashbrown",
+    "version": "0.15.5",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/hashbrown-0.15.5/LICENSE-APACHE",
+      "licenses/hashbrown-0.15.5/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "image",
+    "version": "0.24.9",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/image-0.24.9/LICENSE-APACHE",
+      "licenses/image-0.24.9/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "itoa",
+    "version": "1.0.18",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/itoa-1.0.18/LICENSE-APACHE",
+      "licenses/itoa-1.0.18/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "libc",
+    "version": "0.2.190",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/libc-0.2.190/LICENSE-APACHE",
+      "licenses/libc-0.2.190/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "libm",
+    "version": "0.2.16",
+    "license": "MIT",
+    "files": [
+      "licenses/libm-0.2.16/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "macroquad",
+    "version": "0.4.14",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/macroquad-0.4.14/LICENSE-APACHE",
+      "licenses/macroquad-0.4.14/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "macroquad_macro",
+    "version": "0.1.8",
+    "license": "MIT/Apache-2.0",
+    "files": [
+      "licenses/macroquad_macro-0.1.8/LICENSE-APACHE",
+      "licenses/macroquad_macro-0.1.8/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "malloc_buf",
+    "version": "0.0.6",
+    "license": "MIT",
+    "files": [
+      "licenses/malloc_buf-0.0.6/LICENSE"
+    ]
+  },
+  {
+    "name": "memchr",
+    "version": "2.8.3",
+    "license": "Unlicense OR MIT",
+    "files": [
+      "licenses/memchr-2.8.3/COPYING",
+      "licenses/memchr-2.8.3/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "miniquad",
+    "version": "0.4.8",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/miniquad-0.4.8/LICENSE-APACHE",
+      "licenses/miniquad-0.4.8/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "miniz_oxide",
+    "version": "0.8.9",
+    "license": "MIT OR Zlib OR Apache-2.0",
+    "files": [
+      "licenses/miniz_oxide-0.8.9/LICENSE-APACHE.md",
+      "licenses/miniz_oxide-0.8.9/LICENSE",
+      "licenses/miniz_oxide-0.8.9/LICENSE-MIT.md",
+      "licenses/miniz_oxide-0.8.9/LICENSE-ZLIB.md"
+    ]
+  },
+  {
+    "name": "miniz_oxide",
+    "version": "0.9.1",
+    "license": "MIT OR Zlib OR Apache-2.0",
+    "files": [
+      "licenses/miniz_oxide-0.9.1/LICENSE-APACHE.md",
+      "licenses/miniz_oxide-0.9.1/LICENSE",
+      "licenses/miniz_oxide-0.9.1/LICENSE-MIT.md",
+      "licenses/miniz_oxide-0.9.1/LICENSE-ZLIB.md"
+    ]
+  },
+  {
+    "name": "ndk-sys",
+    "version": "0.2.2",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/ndk-sys-0.2.2/LICENSE-APACHE",
+      "licenses/ndk-sys-0.2.2/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "num-traits",
+    "version": "0.2.19",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/num-traits-0.2.19/LICENSE-APACHE",
+      "licenses/num-traits-0.2.19/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "objc-rs",
+    "version": "0.2.8",
+    "license": "MIT",
+    "files": [
+      "licenses/objc-rs-0.2.8/LICENSE.txt"
+    ]
+  },
+  {
+    "name": "png",
+    "version": "0.17.16",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/png-0.17.16/LICENSE-APACHE",
+      "licenses/png-0.17.16/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "proc-macro2",
+    "version": "1.0.107",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/proc-macro2-1.0.107/LICENSE-APACHE",
+      "licenses/proc-macro2-1.0.107/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "quad-rand",
+    "version": "0.2.3",
+    "license": "MIT",
+    "files": [
+      "licenses/quad-rand-0.2.3/Cargo.toml.orig",
+      "licenses/quad-rand-0.2.3/quad-rand-license-metadata.txt"
+    ]
+  },
+  {
+    "name": "quote",
+    "version": "1.0.47",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/quote-1.0.47/LICENSE-APACHE",
+      "licenses/quote-1.0.47/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "ryu",
+    "version": "1.0.23",
+    "license": "Apache-2.0 OR BSL-1.0",
+    "files": [
+      "licenses/ryu-1.0.23/LICENSE-BOOST",
+      "licenses/ryu-1.0.23/LICENSE-APACHE"
+    ]
+  },
+  {
+    "name": "serde",
+    "version": "1.0.228",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/serde-1.0.228/LICENSE-APACHE",
+      "licenses/serde-1.0.228/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "serde_core",
+    "version": "1.0.228",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/serde_core-1.0.228/LICENSE-APACHE",
+      "licenses/serde_core-1.0.228/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "serde_derive",
+    "version": "1.0.228",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/serde_derive-1.0.228/LICENSE-APACHE",
+      "licenses/serde_derive-1.0.228/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "serde_json",
+    "version": "1.0.145",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/serde_json-1.0.145/LICENSE-APACHE",
+      "licenses/serde_json-1.0.145/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "simd-adler32",
+    "version": "0.3.10",
+    "license": "MIT",
+    "files": [
+      "licenses/simd-adler32-0.3.10/LICENSE.md"
+    ]
+  },
+  {
+    "name": "syn",
+    "version": "2.0.119",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/syn-2.0.119/LICENSE-APACHE",
+      "licenses/syn-2.0.119/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "ttf-parser",
+    "version": "0.25.1",
+    "license": "MIT OR Apache-2.0",
+    "files": [
+      "licenses/ttf-parser-0.25.1/LICENSE-APACHE",
+      "licenses/ttf-parser-0.25.1/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "unicode-ident",
+    "version": "1.0.26",
+    "license": "(MIT OR Apache-2.0) AND Unicode-3.0",
+    "files": [
+      "licenses/unicode-ident-1.0.26/LICENSE-UNICODE",
+      "licenses/unicode-ident-1.0.26/LICENSE-APACHE",
+      "licenses/unicode-ident-1.0.26/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "winapi",
+    "version": "0.3.9",
+    "license": "MIT/Apache-2.0",
+    "files": [
+      "licenses/winapi-0.3.9/LICENSE-APACHE",
+      "licenses/winapi-0.3.9/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "winapi-i686-pc-windows-gnu",
+    "version": "0.4.0",
+    "license": "MIT/Apache-2.0",
+    "files": [
+      "licenses/winapi-i686-pc-windows-gnu-0.4.0/LICENSE-APACHE",
+      "licenses/winapi-i686-pc-windows-gnu-0.4.0/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "winapi-x86_64-pc-windows-gnu",
+    "version": "0.4.0",
+    "license": "MIT/Apache-2.0",
+    "files": [
+      "licenses/winapi-x86_64-pc-windows-gnu-0.4.0/LICENSE-APACHE",
+      "licenses/winapi-x86_64-pc-windows-gnu-0.4.0/LICENSE-MIT"
+    ]
+  },
+  {
+    "name": "zlib-rs",
+    "version": "0.6.8",
+    "license": "Zlib",
+    "files": [
+      "licenses/zlib-rs-0.6.8/LICENSE"
+    ]
+  }
+]

@@ -1,0 +1,7 @@
+quad-rand: pinned version in Cargo.lock.
+Crate Cargo.toml declares license = "MIT" and author not-fl3.
+Repository: https://github.com/not-fl3/quad-rand
+Retained package VCS revision: e110e57ea050a48c6a04d821fa3963c3b6d0f9d0
+No separate license notice was present in the package or that repository revision.
+The standard MIT terms are reproduced in this repository's LICENSE; this record
+preserves the upstream declaration without inventing an upstream copyright.

@@ -1,0 +1,4 @@
+# Retain third-party loader and license files verbatim.
+web/gl.js -whitespace
+web/licenses/** -whitespace
+assets/Inter-OFL.txt -whitespace

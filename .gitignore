@@ -1,0 +1,7 @@
+/target/
+*.log
+*.mp4
+*.nbr
+*.tgz
+*.png
+!web/*.png

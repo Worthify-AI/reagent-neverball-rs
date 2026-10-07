@@ -1,0 +1,7 @@
+{
+  "wasm_sha256": "22748056d4e18a27102c247544729079adaefff7092524ac74ce7d40fc3a9d2b",
+  "loader_sha256": "2222410d803d43800c4d1b3c14afe3e34f7aa1f26fc24efd4f33945fc96fccfb",
+  "macroquad": "0.4.14",
+  "miniquad": "0.4.8",
+  "self_hosted": true
+}
