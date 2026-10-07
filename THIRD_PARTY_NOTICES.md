@@ -1,5 +1,7 @@
 # Dependency notices
 
+Neverball visual assets: Robert Kooima, Jean Privat and Neverball contributors, GPL-2.0-or-later. DejaVu Sans Bold: Bitstream Inc. and Tavmjong Bah, DejaVu font license. Complete notices, original compiled visual assets and asset inventory are retained under assets/neverball/.
+
 Inter font: SIL OFL 1.1 (assets/Inter-OFL.txt). Neverball-derived numeric course and our code: GPL-3.0-or-later (NOTICE.md and LICENSE). Macroquad embeds ProggyClean, whose MIT notice is in web/licenses/PROGGY-FONTS-LICENSE.txt. Self-hosted browser-loader notices are retained in web/licenses/miniquad-0.4.8/ and EMSCRIPTEN-LICENSE.txt.
 
 quad-rand 0.2.3 declares MIT in its published Cargo metadata, but ships no standalone license file. We retain that metadata and its attribution; we do not invent an upstream copyright notice.

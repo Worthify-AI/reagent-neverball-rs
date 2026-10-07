@@ -1,0 +1,233 @@
+{
+  "package": "Ubuntu noble neverball-data 1.6.0+git20180603-3build2",
+  "upstream": "https://neverball.org/",
+  "source_package": "https://launchpad.net/ubuntu/+source/neverball/1.6.0+git20180603-3build2",
+  "license": "GPL-2.0-or-later except DejaVuSans-Bold.ttf (DejaVu font license; see COPYRIGHT.debian)",
+  "conversion": "JPEG textures converted losslessly after decoding to PNG for the renderer; original JPEG files retained. Compiled SOL files retained alongside decoded numeric visual fixtures.",
+  "files": {
+    "COPYRIGHT.debian": {
+      "sha256": "437ad44cbab4bfb057b6a2ed3e85a4d821a0181faa63b4a2121dc79477d616c6",
+      "bytes": 10405
+    },
+    "SOURCE-ASSETS.json": {
+      "sha256": "51078b7a2d9b81360a6e4316e1323e8a2b01da0287e690ca9360058654e957a7",
+      "bytes": 5028
+    },
+    "back/land.png": {
+      "sha256": "a38c0e885fa3af08c00cf6d5877792220c72ab9588660ffbccb4be0d213d6e09",
+      "bytes": 930
+    },
+    "ball/basic-ball/basic-ball-solid.sol": {
+      "sha256": "01d4849f79d7fc06351c13bd3fd5a7bfd492b705d88bc171a3dacb733fe77eb3",
+      "bytes": 136239
+    },
+    "ball/basic-ball/basic-ball.png": {
+      "sha256": "dd16b2991f9a7854c2708a8afc92c8cb07fd26ab0d8feb8ecd9906b5d0a2cf21",
+      "bytes": 689
+    },
+    "item/coin/coin.png": {
+      "sha256": "a7845354e8b455b42c63ba5b177d5b6690bc23fe0d504d829ae958d59c01b562",
+      "bytes": 12337
+    },
+    "item/coin/coin.sol": {
+      "sha256": "40984645c76131eacc17b08179df1a23518761ec064d274d005730cc4aa7d86d",
+      "bytes": 8404
+    },
+    "map-back/clouds.sol": {
+      "sha256": "984b8acb5e3668bd1d4c8ec2bc3514688fd70112c0172d2f6e90e3e4cbcd6990",
+      "bytes": 7780
+    },
+    "map-easy/easy.sol": {
+      "sha256": "94c7a033ba111811bea4ed45bb6cb10d2f9b02ac6cdc698c13225f8aa6c48148",
+      "bytes": 162716
+    },
+    "png/clouds1.png": {
+      "sha256": "5aaab17536f5c5a7be8e88eeb1f17cc87337acce24011e5f1fd5d2e21a65aade",
+      "bytes": 9713
+    },
+    "png/clouds2.png": {
+      "sha256": "d2b8ea28789c1ef69af1cd6d76eff620723862129fb90340caa65e7e812b68dc",
+      "bytes": 6846
+    },
+    "png/clouds3.png": {
+      "sha256": "867512ee64fcef24e96f8a9869636dff95c892cd76d56650381338b27f19a5b6",
+      "bytes": 7058
+    },
+    "png/contrail.png": {
+      "sha256": "948a5ddccbc61173ae75bc082859a7f9bb6e21c543df51479298cd8bceacd62c",
+      "bytes": 329
+    },
+    "png/hills1.png": {
+      "sha256": "fd0baf73d6218f672c0f53d1f676540f2b1c99e9286d5dfb468e4c82021cd595",
+      "bytes": 11043
+    },
+    "png/hills2.png": {
+      "sha256": "8c8b2912e2c076826efbfb66e564051fd5f4d1b5685eebef3cb3898bced1f42d",
+      "bytes": 8315
+    },
+    "png/hills3.png": {
+      "sha256": "efcc51c10a6284164ad0d354fb563f390ecce12d89771309838a9f76dc3c7009",
+      "bytes": 10484
+    },
+    "source/ball/basic-ball/basic-ball": {
+      "sha256": "787d0cece2ee1efd26e1c6426410439ba2b59cd99ead735a521504dde11ac320",
+      "bytes": 160
+    },
+    "source/ball/basic-ball/basic-ball-solid.map": {
+      "sha256": "dac682d5e6ef647472c1cb9d013f71ef9ff47c0f56e004da5bc5a3d4f810bad1",
+      "bytes": 170
+    },
+    "source/ball/basic-ball/basic-ball.obj": {
+      "sha256": "66b13a1137cfcfbf7fd220ee8420240aa5e51898abeabea156b8ebc9365e52cf",
+      "bytes": 590599
+    },
+    "source/item/coin/coin": {
+      "sha256": "3fcd12027e54a7f06cc173dcb2fcf54c5f733029abcf79ce9f4f4cd726daf09c",
+      "bytes": 148
+    },
+    "source/item/coin/coin.map": {
+      "sha256": "695fadfe5acccab65b62e5a3b0dcb71c7349924fc046a58b9a7d2ddae199e832",
+      "bytes": 435
+    },
+    "source/item/coin/coin.obj": {
+      "sha256": "b10c6a3a77ce22a5b3d04dcccff31dfdbae5682b0f56df0dcfd827e4d7f9ae72",
+      "bytes": 25954
+    },
+    "source/item/coin/coin.wings": {
+      "sha256": "20338babbbd272375c092c1fec3ae81be49793963d573e5c41ba431ee481edd2",
+      "bytes": 4335
+    },
+    "source/map-back/clouds.map": {
+      "sha256": "898da329f34609287f44b4fb392ebca0b08a160be5928ab2d0039acc0e371f9c",
+      "bytes": 24920
+    },
+    "source/map-easy/easy.map": {
+      "sha256": "f5ff7892c9ab55de2591853cad8f9d0ddc75a320d665bf5675371c6af40a5e88",
+      "bytes": 47652
+    },
+    "source/textures/mtrl/arrow-green-light": {
+      "sha256": "ae88248dec590a50fec68c51b173f77fb2814dc890e62e24500195c8b747145e",
+      "bytes": 174
+    },
+    "source/textures/mtrl/chrome": {
+      "sha256": "e338264a239d6a7e16446d3bfb78679ab8d44f30b683f9f5f26b8f4dcda8f76f",
+      "bytes": 169
+    },
+    "source/textures/mtrl/coin-green-small": {
+      "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+      "bytes": 156
+    },
+    "source/textures/mtrl/edge-green-offset": {
+      "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+      "bytes": 156
+    },
+    "source/textures/mtrl/goal": {
+      "sha256": "ae88248dec590a50fec68c51b173f77fb2814dc890e62e24500195c8b747145e",
+      "bytes": 174
+    },
+    "source/textures/mtrl/turf-green": {
+      "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+      "bytes": 156
+    },
+    "source/textures/mtrl/turf-green-dark": {
+      "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+      "bytes": 156
+    },
+    "source/textures/mtrl/turf-green-offset": {
+      "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+      "bytes": 156
+    },
+    "source/textures/mtrl/turf-green-small": {
+      "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+      "bytes": 156
+    },
+    "source/textures/mtrl/turf-grey": {
+      "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+      "bytes": 156
+    },
+    "textures/mtrl/arrow-green-light.png": {
+      "sha256": "06aa53ab1d42af630c370a8653469101395b6055882a6fdffe5939f9bea5cd56",
+      "bytes": 40357
+    },
+    "textures/mtrl/chrome.jpg": {
+      "sha256": "9a08b9167ac3325f4723f156cd17c1b4b6d5b0a6a26be2c9d21ffddfffc8001d",
+      "bytes": 2344
+    },
+    "textures/mtrl/chrome.png": {
+      "sha256": "3b74b659a5cfbad98e4de605389f78682a3713c7488855734f39b2c14c68da7e",
+      "bytes": 16567
+    },
+    "textures/mtrl/coin-green-small.jpg": {
+      "sha256": "80c685434e41a8dd8e56e697eb677a78b6a105f6f7d7b90c0648fdce8ca7c4ca",
+      "bytes": 56503
+    },
+    "textures/mtrl/coin-green-small.png": {
+      "sha256": "33aded4768b4b4674f58ee2130344570f2a8ae727314abaacb081d270fdb7bd8",
+      "bytes": 126557
+    },
+    "textures/mtrl/edge-green-offset.jpg": {
+      "sha256": "cb6eaaea1676d2b0b8c66c554534356fb3da5a5b4cfe25ff635caa3d363da32b",
+      "bytes": 62715
+    },
+    "textures/mtrl/edge-green-offset.png": {
+      "sha256": "bcdc2dfec2d26b3b2de00d1be9874aacf379fe9bf72c6d3e05212e5d8e1c122f",
+      "bytes": 128893
+    },
+    "textures/mtrl/goal.png": {
+      "sha256": "b32204efe01d5404c36680de0c1fb1543785fe0bde3e5369fe917220b0fa122c",
+      "bytes": 8876
+    },
+    "textures/mtrl/turf-green-dark.jpg": {
+      "sha256": "42c143fe063adb4e9ae10b6e013e1baf1dfafdbd220d6186ac9b13090a4542cb",
+      "bytes": 58586
+    },
+    "textures/mtrl/turf-green-dark.png": {
+      "sha256": "e484ceba3016640a5c17da966bd030b1b563ed3db6747c3d68320b7971e3b85c",
+      "bytes": 119328
+    },
+    "textures/mtrl/turf-green-offset.jpg": {
+      "sha256": "213642970d0c83f4062f86b6fba7a3c13ef9c8064621e896e72ea8ad534b93e2",
+      "bytes": 56402
+    },
+    "textures/mtrl/turf-green-offset.png": {
+      "sha256": "b2c6a51f130f15e42d06e9d49122a3a2a8862ac9831b1ca12b0809dcd8020381",
+      "bytes": 127317
+    },
+    "textures/mtrl/turf-green-small.jpg": {
+      "sha256": "c6d6891a69ed0076637e570cb16c2d586388855c3c579f4a1fc777dd2e021c29",
+      "bytes": 56631
+    },
+    "textures/mtrl/turf-green-small.png": {
+      "sha256": "2bb13456f5fb298e1e196ca708212b6c78f13e47d4c06d6f9e91734e0b81b3ae",
+      "bytes": 127603
+    },
+    "textures/mtrl/turf-green.jpg": {
+      "sha256": "bc3d1fc4e2a425e6fcc38790cc2f6ff40bc79246459cc51afb8637cc15ce1eb3",
+      "bytes": 56366
+    },
+    "textures/mtrl/turf-green.png": {
+      "sha256": "ceaa0af2e64205c9b9c16f540527002268ac805da706025476149b075eacbdff",
+      "bytes": 127383
+    },
+    "textures/mtrl/turf-grey.jpg": {
+      "sha256": "29c33dfe3c9c6fad5256b7235243a231b7b57f9357a3f8da2f3fcaddf36eb493",
+      "bytes": 42893
+    },
+    "textures/mtrl/turf-grey.png": {
+      "sha256": "a9c1a204e135a4a0e08fcf17ea4ee27a84d1cbd7ac4be20b91526c757cf41fd1",
+      "bytes": 87694
+    },
+    "ttf/DejaVuSans-Bold.ttf": {
+      "sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895",
+      "bytes": 708920
+    }
+  },
+  "preferred_form_sources": "source/ retains Easy 01 and cloud backdrop .map files, basic-ball .map/.obj/material, coin .map/.obj/.wings/material, and surface materials from the matching Debian upstream source version. PNG and JPEG visual assets are retained unmodified; additional PNGs are decoded copies of JPEGs. No game implementation source was retrieved or read.",
+  "font_provenance": {
+    "package": "fonts-dejavu-core 2.37-8",
+    "reference_path": "/usr/share/games/neverball/ttf/DejaVuSans-Bold.ttf",
+    "symlink_target": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+    "sha256": "5c1247acef7f2b8522a31742c76d6adcb5569bacc0be7ceaa4dc39dd252ce895",
+    "license": "DejaVu font license; retained in COPYRIGHT.debian"
+  }
+}

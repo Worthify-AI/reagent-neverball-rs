@@ -1,0 +1,116 @@
+[
+  {
+    "path": "map-easy/easy.map",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/map-easy/easy.map",
+    "sha256": "f5ff7892c9ab55de2591853cad8f9d0ddc75a320d665bf5675371c6af40a5e88",
+    "bytes": 47652
+  },
+  {
+    "path": "map-back/clouds.map",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/map-back/clouds.map",
+    "sha256": "898da329f34609287f44b4fb392ebca0b08a160be5928ab2d0039acc0e371f9c",
+    "bytes": 24920
+  },
+  {
+    "path": "ball/basic-ball/basic-ball-solid.map",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/ball/basic-ball/basic-ball-solid.map",
+    "sha256": "dac682d5e6ef647472c1cb9d013f71ef9ff47c0f56e004da5bc5a3d4f810bad1",
+    "bytes": 170
+  },
+  {
+    "path": "ball/basic-ball/basic-ball.obj",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/ball/basic-ball/basic-ball.obj",
+    "sha256": "66b13a1137cfcfbf7fd220ee8420240aa5e51898abeabea156b8ebc9365e52cf",
+    "bytes": 590599
+  },
+  {
+    "path": "ball/basic-ball/basic-ball",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/ball/basic-ball/basic-ball",
+    "sha256": "787d0cece2ee1efd26e1c6426410439ba2b59cd99ead735a521504dde11ac320",
+    "bytes": 160
+  },
+  {
+    "path": "item/coin/coin.map",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/item/coin/coin.map",
+    "sha256": "695fadfe5acccab65b62e5a3b0dcb71c7349924fc046a58b9a7d2ddae199e832",
+    "bytes": 435
+  },
+  {
+    "path": "item/coin/coin.obj",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/item/coin/coin.obj",
+    "sha256": "b10c6a3a77ce22a5b3d04dcccff31dfdbae5682b0f56df0dcfd827e4d7f9ae72",
+    "bytes": 25954
+  },
+  {
+    "path": "item/coin/coin.wings",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/item/coin/coin.wings",
+    "sha256": "20338babbbd272375c092c1fec3ae81be49793963d573e5c41ba431ee481edd2",
+    "bytes": 4335
+  },
+  {
+    "path": "item/coin/coin",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/item/coin/coin",
+    "sha256": "3fcd12027e54a7f06cc173dcb2fcf54c5f733029abcf79ce9f4f4cd726daf09c",
+    "bytes": 148
+  },
+  {
+    "path": "textures/mtrl/turf-grey",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/textures/mtrl/turf-grey",
+    "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+    "bytes": 156
+  },
+  {
+    "path": "textures/mtrl/turf-green-small",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/textures/mtrl/turf-green-small",
+    "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+    "bytes": 156
+  },
+  {
+    "path": "textures/mtrl/edge-green-offset",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/textures/mtrl/edge-green-offset",
+    "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+    "bytes": 156
+  },
+  {
+    "path": "textures/mtrl/turf-green",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/textures/mtrl/turf-green",
+    "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+    "bytes": 156
+  },
+  {
+    "path": "textures/mtrl/coin-green-small",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/textures/mtrl/coin-green-small",
+    "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+    "bytes": 156
+  },
+  {
+    "path": "textures/mtrl/turf-green-offset",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/textures/mtrl/turf-green-offset",
+    "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+    "bytes": 156
+  },
+  {
+    "path": "textures/mtrl/turf-green-dark",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/textures/mtrl/turf-green-dark",
+    "sha256": "0b97f0e4bfca958b356b652aa5a2e2a3d87db9a2bf1ed395a332990414f338e5",
+    "bytes": 156
+  },
+  {
+    "path": "textures/mtrl/chrome",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/textures/mtrl/chrome",
+    "sha256": "e338264a239d6a7e16446d3bfb78679ab8d44f30b683f9f5f26b8f4dcda8f76f",
+    "bytes": 169
+  },
+  {
+    "path": "textures/mtrl/arrow-green-light",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/textures/mtrl/arrow-green-light",
+    "sha256": "ae88248dec590a50fec68c51b173f77fb2814dc890e62e24500195c8b747145e",
+    "bytes": 174
+  },
+  {
+    "path": "textures/mtrl/goal",
+    "url": "https://sources.debian.org/data/main/n/neverball/1.6.0%2Bgit20180603-3/data/textures/mtrl/goal",
+    "sha256": "ae88248dec590a50fec68c51b173f77fb2814dc890e62e24500195c8b747145e",
+    "bytes": 174
+  }
+]

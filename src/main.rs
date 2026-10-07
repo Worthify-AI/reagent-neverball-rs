@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 use macroquad::prelude::*;
 use reagent_neverball_rs::{Course, Game, Outcome, STEP};
-const INK: Color = Color::new(0.075, 0.09, 0.10, 1.);
+mod visual;
 const PAPER: Color = Color::new(0.93, 0.92, 0.88, 1.);
 const TEAL: Color = Color::new(0.035, 0.56, 0.66, 1.);
 fn conf() -> Conf {
@@ -13,38 +13,6 @@ fn conf() -> Conf {
         window_resizable: true,
         ..Default::default()
     }
-}
-fn warp(p: Vec3, g: &Game) -> Vec3 {
-    let q = Quat::from_rotation_x(-g.tilt.y.to_radians())
-        * Quat::from_rotation_z(-g.tilt.x.to_radians());
-    g.position + q * (p - g.position)
-}
-fn build_meshes(c: &Course) -> Vec<Mesh> {
-    c.mesh
-        .chunks(180)
-        .map(|ts| {
-            let mut vertices = Vec::new();
-            for t in ts {
-                let light = (Vec3::from_array(t.n).dot(vec3(-0.3, 0.9, 0.4).normalize()) * 0.25
-                    + 0.75)
-                    .max(0.35);
-                let color = Color::new(
-                    t.color[0] * light,
-                    t.color[1] * light,
-                    t.color[2] * light,
-                    1.,
-                );
-                for p in t.p {
-                    vertices.push(Vertex::new2(Vec3::from_array(p), vec2(p[0], p[2]), color));
-                }
-            }
-            Mesh {
-                indices: (0..vertices.len() as u16).collect(),
-                vertices,
-                texture: None,
-            }
-        })
-        .collect()
 }
 fn paint_text(font: &Font, s: &str, x: f32, y: f32, size: f32, color: Color) {
     draw_text_ex(
@@ -83,98 +51,6 @@ fn button(font: &Font, rect: Rect, label: &str, active: bool) -> bool {
     );
     let (x, y) = mouse_position();
     is_mouse_button_down(MouseButton::Left) && rect.contains(vec2(x, y))
-}
-fn draw_game(g: &Game, meshes: &mut [Mesh], base: &[Vec<Vec3>], yaw: f32, wide: bool) {
-    clear_background(INK);
-    let dist = if wide { 5.0 } else { 2.0 };
-    let height = if wide { 3.5 } else { 0.75 };
-    let direction = vec3(yaw.sin() * dist, height, yaw.cos() * dist);
-    set_camera(&Camera3D {
-        position: g.position + direction,
-        target: g.position + vec3(0., 0.25, 0.),
-        up: Vec3::Y,
-        fovy: 50f32.to_radians(),
-        z_near: 0.05,
-        z_far: 100.,
-        ..Default::default()
-    });
-    for (mesh, original) in meshes.iter_mut().zip(base) {
-        for (v, p) in mesh.vertices.iter_mut().zip(original) {
-            v.position = warp(*p, g);
-        }
-        draw_mesh(mesh);
-    }
-    for (i, p) in g.course.coins.iter().enumerate() {
-        if !g.collected[i] {
-            let p = warp(Vec3::from_array(*p), g);
-            draw_sphere_ex(
-                p,
-                0.11,
-                None,
-                Color::new(0.91, 0.68, 0.30, 1.),
-                DrawSphereParams {
-                    rings: 8,
-                    slices: 10,
-                    ..Default::default()
-                },
-            );
-            draw_line_3d(p - Vec3::Y * 0.14, p + Vec3::Y * 0.14, PAPER);
-        }
-    }
-    let gate = warp(vec3(g.course.goal[0], 0.01, g.course.goal[2]), g);
-    let color = if g.goal_open() {
-        TEAL
-    } else {
-        Color::new(0.68, 0.32, 0.23, 1.)
-    };
-    for i in 0..48 {
-        let a = i as f32 * std::f32::consts::TAU / 48.;
-        let b = (i + 1) as f32 * std::f32::consts::TAU / 48.;
-        let r = g.course.goal[3];
-        draw_line_3d(
-            gate + warp_offset(vec3(a.cos() * r, 0., a.sin() * r), g),
-            gate + warp_offset(vec3(b.cos() * r, 0., b.sin() * r), g),
-            color,
-        );
-    }
-    if g.goal_open() {
-        draw_cylinder(gate + Vec3::Y * 0.5, 0.04, 0.04, 1., None, TEAL);
-    }
-    draw_sphere_ex(
-        g.position,
-        g.course.radius,
-        None,
-        TEAL,
-        DrawSphereParams {
-            rings: 24,
-            slices: 32,
-            ..Default::default()
-        },
-    );
-    let rotation = Quat::from_rotation_x(g.distance / g.course.radius);
-    for axis in [Vec3::X, Vec3::Y] {
-        for i in 0..48 {
-            let a = i as f32 * std::f32::consts::TAU / 48.;
-            let b = (i + 1) as f32 * std::f32::consts::TAU / 48.;
-            let f = |t: f32| {
-                rotation
-                    * if axis == Vec3::X {
-                        vec3(t.cos(), t.sin(), 0.)
-                    } else {
-                        vec3(0., t.cos(), t.sin())
-                    }
-            };
-            draw_line_3d(
-                g.position + f(a) * g.course.radius * 1.004,
-                g.position + f(b) * g.course.radius * 1.004,
-                PAPER,
-            );
-        }
-    }
-    set_default_camera();
-}
-fn warp_offset(p: Vec3, g: &Game) -> Vec3 {
-    warp(p + g.position, g) - g.position
 }
 #[derive(Clone, Copy)]
 struct Event {
@@ -219,14 +95,12 @@ extern "C" {
 }
 #[macroquad::main(conf)]
 async fn main() {
-    let font = load_ttf_font_from_bytes(include_bytes!("../assets/Inter.ttf"))
-        .expect("licensed Inter font");
+    let font = load_ttf_font_from_bytes(include_bytes!(
+        "../assets/neverball/ttf/DejaVuSans-Bold.ttf"
+    ))
+    .expect("licensed DejaVu Sans Bold font");
     let mut g = Game::new(Course::reference());
-    let mut meshes = build_meshes(&g.course);
-    let base: Vec<Vec<Vec3>> = meshes
-        .iter()
-        .map(|m| m.vertices.iter().map(|v| v.position).collect())
-        .collect();
+    let mut scene = visual::Scene::new();
     let (events, capture) = options();
     #[cfg(target_arch = "wasm32")]
     let _ = capture;
@@ -306,78 +180,122 @@ async fn main() {
                 - ((held_key(KeyCode::Down, 1073741905) || (!tas && is_key_down(KeyCode::S))) as u8
                     as f32),
         );
-        draw_game(&g, &mut meshes, &base, yaw, wide);
+        scene.draw(&g, yaw, wide);
         let w = screen_width();
         let h = screen_height();
         let small = w < 550.;
-        draw_rectangle(0., 0., w, 72., Color::new(0.075, 0.09, 0.10, 0.95));
-        draw_rectangle(18., 20., 12., 12., TEAL);
-        draw_rectangle(32., 34., 12., 12., PAPER);
+        let scale = (h / 600.).min(w / 800.);
+        let timer = format!("{}:{:02}", (g.time as i32) / 60, (g.time as i32) % 60);
+        let centis = format!("{:02}", ((g.time.max(0.) * 100.) as i32) % 100);
+        let tw = 202. * scale;
+        draw_rectangle(
+            w * 0.5 - tw * 0.5,
+            h - 64. * scale,
+            tw,
+            64. * scale,
+            Color::new(0., 0., 0., 0.45),
+        );
+        let x = w * 0.5 - 71. * scale;
         paint_text(
             &font,
-            "WORTHIFY",
-            54.,
-            34.,
-            if small { 20. } else { 24. },
-            PAPER,
+            &timer,
+            x + 2. * scale,
+            h - 13. * scale,
+            48. * scale,
+            BLACK,
         );
         paint_text(
             &font,
-            "ROLLING LAB",
-            54.,
-            55.,
-            14.,
-            Color::new(0.60, 0.65, 0.65, 1.),
+            &timer,
+            x,
+            h - 15. * scale,
+            48. * scale,
+            Color::new(1., 0.4, 0., 1.),
         );
         paint_text(
             &font,
-            &format!("{:02}:{:02}", (g.time as i32) / 60, (g.time as i32) % 60),
-            w - 138.,
-            31.,
-            23.,
-            PAPER,
+            &centis,
+            w * 0.5 + 42. * scale,
+            h - 24. * scale,
+            24. * scale,
+            ORANGE,
+        );
+        draw_rectangle(
+            w - 146. * scale,
+            h - 76. * scale,
+            146. * scale,
+            76. * scale,
+            Color::new(0., 0., 0., 0.45),
         );
         paint_text(
             &font,
-            &format!("{} / {} COINS", g.coins(), g.course.required_coins),
-            w - 138.,
-            54.,
-            16.,
-            if g.goal_open() { TEAL } else { PAPER },
+            &format!("{}", g.coins()),
+            w - 122. * scale,
+            h - 48. * scale,
+            24. * scale,
+            ORANGE,
         );
-        let size = if small { 46. } else { 42. };
-        let pad = vec2(18., h - size * 2. - 26.);
-        if button(
+        paint_text(
             &font,
-            Rect::new(pad.x + size + 4., pad.y, size, size),
-            "W",
-            input.y > 0.,
-        ) {
-            input.y = 1.;
-        }
-        if button(
+            "Coins",
+            w - 76. * scale,
+            h - 48. * scale,
+            24. * scale,
+            WHITE,
+        );
+        paint_text(
             &font,
-            Rect::new(pad.x, pad.y + size + 4., size, size),
-            "A",
-            input.x < 0.,
-        ) {
-            input.x = -1.;
-        }
-        if button(
+            &format!("{}", g.course.required_coins.saturating_sub(g.coins())),
+            w - 130. * scale,
+            h - 11. * scale,
+            24. * scale,
+            ORANGE,
+        );
+        paint_text(
             &font,
-            Rect::new(pad.x + size + 4., pad.y + size + 4., size, size),
-            "S",
-            input.y < 0.,
-        ) {
-            input.y = -1.;
-        }
-        if button(
-            &font,
-            Rect::new(pad.x + size * 2. + 8., pad.y + size + 4., size, size),
-            "D",
-            input.x > 0.,
-        ) {
-            input.x = 1.;
+            "Goal",
+            w - 76. * scale,
+            h - 11. * scale,
+            24. * scale,
+            WHITE,
+        );
+        // Touch controls are reserved for small viewports; desktop gameplay
+        // retains the original unobstructed presentation.
+        if small {
+            let size = if small { 46. } else { 42. };
+            let pad = vec2(18., h - size * 2. - 26.);
+            if button(
+                &font,
+                Rect::new(pad.x + size + 4., pad.y, size, size),
+                "W",
+                input.y > 0.,
+            ) {
+                input.y = 1.;
+            }
+            if button(
+                &font,
+                Rect::new(pad.x, pad.y + size + 4., size, size),
+                "A",
+                input.x < 0.,
+            ) {
+                input.x = -1.;
+            }
+            if button(
+                &font,
+                Rect::new(pad.x + size + 4., pad.y + size + 4., size, size),
+                "S",
+                input.y < 0.,
+            ) {
+                input.y = -1.;
+            }
+            if button(
+                &font,
+                Rect::new(pad.x + size * 2. + 8., pad.y + size + 4., size, size),
+                "D",
+                input.x > 0.,
+            ) {
+                input.x = 1.;
+            }
         }
         if !started && ready.is_none() {
             draw_rectangle(
@@ -387,7 +305,7 @@ async fn main() {
                 h * 0.38,
                 Color::new(0.075, 0.09, 0.10, 0.9),
             );
-            let text = "Tilt. Collect. Deliver.";
+            let text = "Neverball · Easy 01";
             paint_text(
                 &font,
                 text,
@@ -398,7 +316,7 @@ async fn main() {
             );
             paint_text(
                 &font,
-                "One reconstructed training course",
+                "Collect 10 coins to unlock the goal.",
                 24.,
                 h * 0.46,
                 if small { 14. } else { 18. },
@@ -414,7 +332,7 @@ async fn main() {
                 "PAUSED"
             } else {
                 match g.outcome {
-                    Outcome::Won => "DELIVERED",
+                    Outcome::Won => "Success!",
                     Outcome::Fell => "TRY AGAIN",
                     Outcome::TimedOut => "TIME UP",
                     _ => "",
@@ -424,22 +342,15 @@ async fn main() {
             paint_text(&font, text, 24., h * 0.4 + 42., 32., PAPER);
             paint_text(&font, "R / tap RESTART", 24., h * 0.4 + 76., 18., TEAL);
         }
-        let reset = Rect::new(w - 106., h - 54., 88., 36.);
-        if button(&font, reset, "RESTART", false) && is_mouse_button_pressed(MouseButton::Left) {
-            g.reset();
-            started = true;
-            paused = false;
-            ready = None;
-        }
-        if !small {
-            paint_text(
-                &font,
-                "ARROWS · tilt   Q / E · camera   V · view   SPACE · pause",
-                185.,
-                h - 24.,
-                13.,
-                PAPER,
-            );
+        if small || paused || g.outcome != Outcome::Playing {
+            let reset = Rect::new(18., 18., 110., 36.);
+            if button(&font, reset, "RESTART", false) && is_mouse_button_pressed(MouseButton::Left)
+            {
+                g.reset();
+                started = true;
+                paused = false;
+                ready = None;
+            }
         }
         if let Some(n) = ready {
             if n == 0 {
