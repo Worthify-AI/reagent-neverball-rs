@@ -1,0 +1,271 @@
+{
+  "format": 1,
+  "license": "GPL-2.0-or-later",
+  "attribution": "Robert Kooima, Jean Privat and Neverball contributors",
+  "package": "Ubuntu noble neverball-data 1.6.0+git20180603-3build2",
+  "notices": "data/COPYRIGHT.debian",
+  "preferred_form_assets": "assets/neverball/source-full/",
+  "scope": "Only the 20 existing PNG textures referenced by the renderer tex! include_bytes macro. Runtime JPEG originals remain in data/. No engine implementation source.",
+  "files": [
+    {
+      "path": "assets/neverball/back/land.png",
+      "source": "data/back/land.png",
+      "sha256": "a38c0e885fa3af08c00cf6d5877792220c72ab9588660ffbccb4be0d213d6e09",
+      "source_sha256": "a38c0e885fa3af08c00cf6d5877792220c72ab9588660ffbccb4be0d213d6e09",
+      "bytes": 930,
+      "dimensions": [
+        16,
+        128
+      ],
+      "decoded_rgb_sha256": "56a5019009343b15f2ebea42b5fb60a95a633c64d4694a1e54ce920f498790ee",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/ball/basic-ball/basic-ball.png",
+      "source": "data/ball/basic-ball/basic-ball.png",
+      "sha256": "dd16b2991f9a7854c2708a8afc92c8cb07fd26ab0d8feb8ecd9906b5d0a2cf21",
+      "source_sha256": "dd16b2991f9a7854c2708a8afc92c8cb07fd26ab0d8feb8ecd9906b5d0a2cf21",
+      "bytes": 689,
+      "dimensions": [
+        512,
+        256
+      ],
+      "decoded_rgb_sha256": "e7b63b9fc666cb8f71d9f800d247047efb467c80716c3a24ba4f35cd822b478c",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/item/coin/coin.png",
+      "source": "data/item/coin/coin.png",
+      "sha256": "a7845354e8b455b42c63ba5b177d5b6690bc23fe0d504d829ae958d59c01b562",
+      "source_sha256": "a7845354e8b455b42c63ba5b177d5b6690bc23fe0d504d829ae958d59c01b562",
+      "bytes": 12337,
+      "dimensions": [
+        256,
+        256
+      ],
+      "decoded_rgb_sha256": "ac49c97bf21fba77450c5fb678541280eac1411d1fa1db097444e757baf47b81",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/png/clouds1.png",
+      "source": "data/png/clouds1.png",
+      "sha256": "5aaab17536f5c5a7be8e88eeb1f17cc87337acce24011e5f1fd5d2e21a65aade",
+      "source_sha256": "5aaab17536f5c5a7be8e88eeb1f17cc87337acce24011e5f1fd5d2e21a65aade",
+      "bytes": 9713,
+      "dimensions": [
+        256,
+        128
+      ],
+      "decoded_rgb_sha256": "1b2b9fde3572a9185b88f68c20be667bce894b78b32c13416b5474192fada191",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/png/clouds2.png",
+      "source": "data/png/clouds2.png",
+      "sha256": "d2b8ea28789c1ef69af1cd6d76eff620723862129fb90340caa65e7e812b68dc",
+      "source_sha256": "d2b8ea28789c1ef69af1cd6d76eff620723862129fb90340caa65e7e812b68dc",
+      "bytes": 6846,
+      "dimensions": [
+        256,
+        128
+      ],
+      "decoded_rgb_sha256": "e454d2128f6ec44537ac8c09e1f7d7b9462fa566e094f8831a36cb35edc2ea16",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/png/clouds3.png",
+      "source": "data/png/clouds3.png",
+      "sha256": "867512ee64fcef24e96f8a9869636dff95c892cd76d56650381338b27f19a5b6",
+      "source_sha256": "867512ee64fcef24e96f8a9869636dff95c892cd76d56650381338b27f19a5b6",
+      "bytes": 7058,
+      "dimensions": [
+        256,
+        128
+      ],
+      "decoded_rgb_sha256": "110f1a75a12d4d6eb49e1f6aa00d065538183186cd3614c94cf965055a91cfce",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/png/contrail.png",
+      "source": "data/png/contrail.png",
+      "sha256": "948a5ddccbc61173ae75bc082859a7f9bb6e21c543df51479298cd8bceacd62c",
+      "source_sha256": "948a5ddccbc61173ae75bc082859a7f9bb6e21c543df51479298cd8bceacd62c",
+      "bytes": 329,
+      "dimensions": [
+        16,
+        256
+      ],
+      "decoded_rgb_sha256": "2a32d9a94209e87b46358ff2151efee07dea13d3171a3dfb4331dede6e060479",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/png/hills1.png",
+      "source": "data/png/hills1.png",
+      "sha256": "fd0baf73d6218f672c0f53d1f676540f2b1c99e9286d5dfb468e4c82021cd595",
+      "source_sha256": "fd0baf73d6218f672c0f53d1f676540f2b1c99e9286d5dfb468e4c82021cd595",
+      "bytes": 11043,
+      "dimensions": [
+        512,
+        128
+      ],
+      "decoded_rgb_sha256": "e162e2ad856cf9fe1f20dec7248a54c996d07468bb881456fe52de2edb209d26",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/png/hills2.png",
+      "source": "data/png/hills2.png",
+      "sha256": "8c8b2912e2c076826efbfb66e564051fd5f4d1b5685eebef3cb3898bced1f42d",
+      "source_sha256": "8c8b2912e2c076826efbfb66e564051fd5f4d1b5685eebef3cb3898bced1f42d",
+      "bytes": 8315,
+      "dimensions": [
+        512,
+        128
+      ],
+      "decoded_rgb_sha256": "1a5ceeb7baaf23fcf7b0a105205e6e12883021f8c727eb3253f351cbab1e9749",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/png/hills3.png",
+      "source": "data/png/hills3.png",
+      "sha256": "efcc51c10a6284164ad0d354fb563f390ecce12d89771309838a9f76dc3c7009",
+      "source_sha256": "efcc51c10a6284164ad0d354fb563f390ecce12d89771309838a9f76dc3c7009",
+      "bytes": 10484,
+      "dimensions": [
+        512,
+        128
+      ],
+      "decoded_rgb_sha256": "41f78c5513fc8cba8bc8eac8bda9ac7425d3cd8268aa24acca2e1064da342cf1",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/textures/mtrl/arrow-green-light.png",
+      "source": "data/textures/mtrl/arrow-green-light.png",
+      "sha256": "06aa53ab1d42af630c370a8653469101395b6055882a6fdffe5939f9bea5cd56",
+      "source_sha256": "06aa53ab1d42af630c370a8653469101395b6055882a6fdffe5939f9bea5cd56",
+      "bytes": 40357,
+      "dimensions": [
+        256,
+        256
+      ],
+      "decoded_rgb_sha256": "237a92fd4ae28b7f4167ebe1df145b2b096f409669a7903603a349933d444b91",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/textures/mtrl/chrome.png",
+      "source": "data/textures/mtrl/chrome.jpg",
+      "sha256": "3b74b659a5cfbad98e4de605389f78682a3713c7488855734f39b2c14c68da7e",
+      "source_sha256": "9a08b9167ac3325f4723f156cd17c1b4b6d5b0a6a26be2c9d21ffddfffc8001d",
+      "bytes": 16567,
+      "dimensions": [
+        128,
+        128
+      ],
+      "decoded_rgb_sha256": "b3e5a4036a6f5e19c520aa2fedc2283b8cdef1c1294e59e9a6827a178df64875",
+      "conversion": "JPEG decoded to RGB and encoded as PNG; decoded pixels unchanged"
+    },
+    {
+      "path": "assets/neverball/textures/mtrl/coin-green-small.png",
+      "source": "data/textures/mtrl/coin-green-small.jpg",
+      "sha256": "33aded4768b4b4674f58ee2130344570f2a8ae727314abaacb081d270fdb7bd8",
+      "source_sha256": "80c685434e41a8dd8e56e697eb677a78b6a105f6f7d7b90c0648fdce8ca7c4ca",
+      "bytes": 126557,
+      "dimensions": [
+        256,
+        256
+      ],
+      "decoded_rgb_sha256": "32d333a79dc8e4450666da4b2121fc67a75b06df82b8e14a6d76db004cd04323",
+      "conversion": "JPEG decoded to RGB and encoded as PNG; decoded pixels unchanged"
+    },
+    {
+      "path": "assets/neverball/textures/mtrl/edge-green-offset.png",
+      "source": "data/textures/mtrl/edge-green-offset.jpg",
+      "sha256": "bcdc2dfec2d26b3b2de00d1be9874aacf379fe9bf72c6d3e05212e5d8e1c122f",
+      "source_sha256": "cb6eaaea1676d2b0b8c66c554534356fb3da5a5b4cfe25ff635caa3d363da32b",
+      "bytes": 128893,
+      "dimensions": [
+        256,
+        256
+      ],
+      "decoded_rgb_sha256": "e68e1be564436f0a10432e13cc09476c8a03040346016863f19f011b9b573219",
+      "conversion": "JPEG decoded to RGB and encoded as PNG; decoded pixels unchanged"
+    },
+    {
+      "path": "assets/neverball/textures/mtrl/goal.png",
+      "source": "data/textures/mtrl/goal.png",
+      "sha256": "b32204efe01d5404c36680de0c1fb1543785fe0bde3e5369fe917220b0fa122c",
+      "source_sha256": "b32204efe01d5404c36680de0c1fb1543785fe0bde3e5369fe917220b0fa122c",
+      "bytes": 8876,
+      "dimensions": [
+        256,
+        256
+      ],
+      "decoded_rgb_sha256": "db0c30aa338c183afb0f52ba097710e7a49cfc969fcb825de2c7cfd9a8ed19d7",
+      "conversion": "byte-identical PNG copy"
+    },
+    {
+      "path": "assets/neverball/textures/mtrl/turf-green-dark.png",
+      "source": "data/textures/mtrl/turf-green-dark.jpg",
+      "sha256": "e484ceba3016640a5c17da966bd030b1b563ed3db6747c3d68320b7971e3b85c",
+      "source_sha256": "42c143fe063adb4e9ae10b6e013e1baf1dfafdbd220d6186ac9b13090a4542cb",
+      "bytes": 119328,
+      "dimensions": [
+        256,
+        256
+      ],
+      "decoded_rgb_sha256": "fec423a21376b536a5332133121b743ad7aaad745883784ef6db741c7fe9dd2b",
+      "conversion": "JPEG decoded to RGB and encoded as PNG; decoded pixels unchanged"
+    },
+    {
+      "path": "assets/neverball/textures/mtrl/turf-green-offset.png",
+      "source": "data/textures/mtrl/turf-green-offset.jpg",
+      "sha256": "b2c6a51f130f15e42d06e9d49122a3a2a8862ac9831b1ca12b0809dcd8020381",
+      "source_sha256": "213642970d0c83f4062f86b6fba7a3c13ef9c8064621e896e72ea8ad534b93e2",
+      "bytes": 127317,
+      "dimensions": [
+        256,
+        256
+      ],
+      "decoded_rgb_sha256": "3951afe988d79afe11cd28f36b372378304a86ca8c3dfba18744fbf11092767c",
+      "conversion": "JPEG decoded to RGB and encoded as PNG; decoded pixels unchanged"
+    },
+    {
+      "path": "assets/neverball/textures/mtrl/turf-green-small.png",
+      "source": "data/textures/mtrl/turf-green-small.jpg",
+      "sha256": "2bb13456f5fb298e1e196ca708212b6c78f13e47d4c06d6f9e91734e0b81b3ae",
+      "source_sha256": "c6d6891a69ed0076637e570cb16c2d586388855c3c579f4a1fc777dd2e021c29",
+      "bytes": 127603,
+      "dimensions": [
+        256,
+        256
+      ],
+      "decoded_rgb_sha256": "790f48eaa46c385fda19b0949969062f7485e20951f6715471157c7da218c903",
+      "conversion": "JPEG decoded to RGB and encoded as PNG; decoded pixels unchanged"
+    },
+    {
+      "path": "assets/neverball/textures/mtrl/turf-green.png",
+      "source": "data/textures/mtrl/turf-green.jpg",
+      "sha256": "ceaa0af2e64205c9b9c16f540527002268ac805da706025476149b075eacbdff",
+      "source_sha256": "bc3d1fc4e2a425e6fcc38790cc2f6ff40bc79246459cc51afb8637cc15ce1eb3",
+      "bytes": 127383,
+      "dimensions": [
+        256,
+        256
+      ],
+      "decoded_rgb_sha256": "2abdf67e73a8cb5bed96dd35f8ec41f15778e121046c4999b3000a2cd794190a",
+      "conversion": "JPEG decoded to RGB and encoded as PNG; decoded pixels unchanged"
+    },
+    {
+      "path": "assets/neverball/textures/mtrl/turf-grey.png",
+      "source": "data/textures/mtrl/turf-grey.jpg",
+      "sha256": "a9c1a204e135a4a0e08fcf17ea4ee27a84d1cbd7ac4be20b91526c757cf41fd1",
+      "source_sha256": "29c33dfe3c9c6fad5256b7235243a231b7b57f9357a3f8da2f3fcaddf36eb493",
+      "bytes": 87694,
+      "dimensions": [
+        256,
+        256
+      ],
+      "decoded_rgb_sha256": "ef6e4acb070a6081e491d597c880a98dc6f6e132d8a0eee388d296020454ef74",
+      "conversion": "JPEG decoded to RGB and encoded as PNG; decoded pixels unchanged"
+    }
+  ]
+}

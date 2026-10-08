@@ -38,7 +38,7 @@ These are binary-derived rules, not fitted corrections using expected positions.
 
 ## Repeatable public checks
 
-`cargo test --locked` runs **46 tests with zero ignored tests**, including 19 physics tests, the all-course load/idle test, original replay parsing, numeric component measurements and actual raw-key fixtures. A separate checkout with no private experiment directory passed the full suite and strict all-target Clippy.
+`cargo test --locked` runs **51 tests with zero ignored tests**, including 19 physics tests, the all-course load/idle test, original replay parsing, numeric component measurements, actual raw-key fixtures and browser catalogue parity checks. The working checkout passed this suite and strict all-target Clippy. The earlier separate public-layout check passed the **46-test pre-catalogue baseline**; it copied the public files rather than cloning Git. A fresh Git clone of revision `ae2dff2` exposed 20 missing compile-time PNG copies. Those required assets are now tracked: 12 byte-identical PNG originals and eight PNG conversions whose decoded pixels match the retained JPEG originals. Runtime JPEG assets were already published. `assets/neverball/EMBEDDED-TEXTURES.json` records origins, hashes and licensing; `python3 harness/check-embedded-textures.py --pixels` checks them (Pillow is required for decoded-pixel comparisons).
 
 `fixtures/physics/` retains sanitized NBRs, exact delivered ledgers, component measurements, provenance and hashes. Player headers are normalized to “Fixture”; original command streams remain unchanged and their hashes are retained. Missing fixtures fail rather than silently skip coverage. Original levels come from the licensed public `data/` directory.
 
