@@ -1,0 +1,34 @@
+{
+  "camera-modes.camera.json": {
+    "bytes": 498477,
+    "sha256": "f20732d7e62cc7529e0f3051be97ea5e710aeb3e50b509009657f8a80603006f"
+  },
+  "camera-modes.nbr": {
+    "bytes": 208028,
+    "sha256": "bfac0b729cb4b8355dab60dcc94c718ecfe86994fb766f7878444ebc78742f7e"
+  },
+  "camera-transitions.camera.json": {
+    "bytes": 122965,
+    "sha256": "f3f8a82e3a2df4d7ad57d7d0141c0178738ec395c8737f030b8f84fe089386ec"
+  },
+  "camera-transitions.nbr": {
+    "bytes": 83372,
+    "sha256": "2ac8b2800b1dc26f93139ed320175cfd77c01e347fed1f2227bc297c6efbd8a8"
+  },
+  "holdout-diagonal.nbr": {
+    "bytes": 208035,
+    "sha256": "13903723c31f745e155dc01fcef17d71d0d30ebda375bcf8eb7f19d0c520aaa0"
+  },
+  "physics-mover-complete-batches.nbr": {
+    "bytes": 164690,
+    "sha256": "360ef45e3c24c36a0bdbcd29c5dbc9d21e4f4f30e69f505b1d38135200eaaf4b"
+  },
+  "../../data/map-easy/mover.sol": {
+    "bytes": 192308,
+    "sha256": "aa58e70af82781bb4c71dcf43cd0c88bf2c0f0813e00f6d753842183e441d910"
+  },
+  "easytele.nbr": {
+    "bytes": 108566,
+    "sha256": "edd79489dcebcf20ed0100dd491f2a407543916d4f14b77e7e2ae2561fd6334c"
+  }
+}

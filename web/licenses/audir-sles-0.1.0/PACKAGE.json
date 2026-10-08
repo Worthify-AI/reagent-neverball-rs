@@ -1,0 +1,10 @@
+{
+  "name": "audir-sles",
+  "version": "0.1.0",
+  "license": "MIT OR Apache-2.0",
+  "authors": [
+    "msiglreith <m.siglreith@gmail.com>"
+  ],
+  "repository": "https://github.com/norse-rs/audir-sles",
+  "homepage": null
+}

@@ -1,0 +1,10 @@
+{
+  "name": "core_maths",
+  "version": "0.1.1",
+  "license": "MIT",
+  "authors": [
+    "Robert Bastian <me@robertbastian.dev"
+  ],
+  "repository": "https://github.com/robertbastian/core_maths",
+  "homepage": null
+}

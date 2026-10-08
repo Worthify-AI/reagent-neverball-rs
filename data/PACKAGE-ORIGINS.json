@@ -1,0 +1,18 @@
+{
+  "packages": [
+    {
+      "name": "neverball-data",
+      "version": "1.6.0+git20180603-3build2",
+      "sha256": "9833a317bf87cb43a71e9246b9d018bbc9397ed1e6a7ecd1aee462ce65dc0ed1",
+      "origin": "https://archive.ubuntu.com/ubuntu/pool/universe/n/neverball/neverball-data_1.6.0+git20180603-3build2_all.deb"
+    },
+    {
+      "name": "neverball-common",
+      "version": "1.6.0+git20180603-3build2",
+      "sha256": "57eccd0083316784f6a8af9d74714c158c68eebdb43c24048cc22d6b5e629a0f",
+      "origin": "https://archive.ubuntu.com/ubuntu/pool/universe/n/neverball/neverball-common_1.6.0+git20180603-3build2_all.deb"
+    }
+  ],
+  "kind": "packaged compiled levels and licensed runtime artwork/audio; no engine implementation source",
+  "retained_content": "Neverball runtime content; Octocat models and dangling font links excluded. 183 gameplay levels, seven background levels, 43 other model/interface SOLs."
+}

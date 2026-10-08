@@ -1,0 +1,10 @@
+{
+  "name": "image",
+  "version": "0.24.9",
+  "license": "MIT OR Apache-2.0",
+  "authors": [
+    "The image-rs Developers"
+  ],
+  "repository": "https://github.com/image-rs/image",
+  "homepage": "https://github.com/image-rs/image"
+}

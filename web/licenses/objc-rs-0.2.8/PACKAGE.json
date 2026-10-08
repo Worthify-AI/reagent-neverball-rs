@@ -1,0 +1,11 @@
+{
+  "name": "objc-rs",
+  "version": "0.2.8",
+  "license": "MIT",
+  "authors": [
+    "Steven Sheldon",
+    "Raphael Amorim"
+  ],
+  "repository": "http://github.com/raphamorim/objc-rs",
+  "homepage": null
+}

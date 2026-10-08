@@ -1,0 +1,13 @@
+{
+  "name": "ttf-parser",
+  "version": "0.25.1",
+  "license": "MIT OR Apache-2.0",
+  "authors": [
+    "Caleb Maclennan <caleb@alerque.com>",
+    "Laurenz Stampfl <laurenz.stampfl@gmail.com>",
+    "Yevhenii Reizner <razrfalcon@gmail.com>",
+    "\u062e\u0627\u0644\u062f \u062d\u0633\u0646\u064a (Khaled Hosny) <khaled@aliftype.com>"
+  ],
+  "repository": "https://github.com/harfbuzz/ttf-parser",
+  "homepage": null
+}

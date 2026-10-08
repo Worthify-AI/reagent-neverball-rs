@@ -1,10 +1,18 @@
 {
-  "wasm_sha256": "2135ddd5cfe9e6b65248addf29e63d0456084a56fdc7562f9f510ac5612b999b",
+  "wasm_sha256": "39e79bacf04b2e07e7f19c87aa6de679f17682530d7da9c96153e47cde8e1fa7",
   "loader_sha256": "2222410d803d43800c4d1b3c14afe3e34f7aa1f26fc24efd4f33945fc96fccfb",
   "macroquad": "0.4.14",
   "miniquad": "0.4.8",
   "self_hosted": true,
   "visual_assets_source_sha256": "896d33e6f6e2dc057ab18ce2a48a802a7f5b5a159353bc09e7b2f62fee7b48bc",
   "visual_assets_manifest_sha256": "7d7f7baf814f0f146f0be9e7432301014716f67e0b398d035bdacebb27638f17",
-  "hud_font": "DejaVu Sans Bold (fonts-dejavu-core 2.37-8)"
+  "hud_font": "DejaVu Sans Bold (fonts-dejavu-core 2.37-8)",
+  "audio_loader": {
+    "crate": "quad-snd",
+    "version": "0.2.8",
+    "file": "quad-snd.js",
+    "sha256": "764a9bc5634f36d9b508fe2ef6b32befb356b6c797238a8e5cf0d1c881def522"
+  },
+  "runtime_assets_manifest_sha256": "25f345700a40345a57ab6b9cb99e03f5258bb5ed75990e223019c29ff615ee5f",
+  "preferred_form_manifest_sha256": "8ffc54aa21cae5657efaa9f3b137fe63195c18ed9b2fa4dbec306ae962460e79"
 }

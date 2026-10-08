@@ -1,0 +1,11 @@
+{
+  "name": "quad-alsa-sys",
+  "version": "0.3.2",
+  "license": "MIT",
+  "authors": [
+    "Pierre Krieger <pierre.krieger1708@gmail.com>",
+    "David Henningsson <coding@diwic.se>"
+  ],
+  "repository": "https://github.com/not-fl3/alsa-sys",
+  "homepage": null
+}

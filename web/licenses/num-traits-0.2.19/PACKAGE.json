@@ -1,0 +1,10 @@
+{
+  "name": "num-traits",
+  "version": "0.2.19",
+  "license": "MIT OR Apache-2.0",
+  "authors": [
+    "The Rust Project Developers"
+  ],
+  "repository": "https://github.com/rust-num/num-traits",
+  "homepage": "https://github.com/rust-num/num-traits"
+}

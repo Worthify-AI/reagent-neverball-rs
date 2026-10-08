@@ -1,0 +1,10 @@
+{
+  "name": "simd-adler32",
+  "version": "0.3.10",
+  "license": "MIT",
+  "authors": [
+    "Marvin Countryman <me@maar.vin>"
+  ],
+  "repository": "https://github.com/mcountryman/simd-adler32",
+  "homepage": null
+}

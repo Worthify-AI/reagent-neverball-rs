@@ -1,0 +1,10 @@
+{
+  "name": "ogg",
+  "version": "0.7.1",
+  "license": "BSD-3-Clause",
+  "authors": [
+    "est31 <MTest31@outlook.com>"
+  ],
+  "repository": "https://github.com/RustAudio/ogg",
+  "homepage": null
+}

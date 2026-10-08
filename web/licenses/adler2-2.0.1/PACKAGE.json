@@ -1,0 +1,11 @@
+{
+  "name": "adler2",
+  "version": "2.0.1",
+  "license": "0BSD OR MIT OR Apache-2.0",
+  "authors": [
+    "Jonas Schievink <jonasschievink@gmail.com>",
+    "oyvindln <oyvindln@users.noreply.github.com>"
+  ],
+  "repository": "https://github.com/oyvindln/adler2",
+  "homepage": null
+}

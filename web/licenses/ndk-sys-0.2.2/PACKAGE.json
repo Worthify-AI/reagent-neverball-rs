@@ -1,0 +1,10 @@
+{
+  "name": "ndk-sys",
+  "version": "0.2.2",
+  "license": "MIT OR Apache-2.0",
+  "authors": [
+    "The Rust Windowing contributors"
+  ],
+  "repository": "https://github.com/rust-windowing/android-ndk-rs",
+  "homepage": "https://github.com/rust-windowing/android-ndk-rs"
+}

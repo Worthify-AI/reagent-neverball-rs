@@ -5,3 +5,13 @@
 *.tgz
 *.png
 !web/*.png
+
+/web/data
+
+# Licensed runtime assets and corresponding authoring assets are release inputs.
+!data/**/*.png
+!data/**/*.nbr
+!assets/neverball/source-full/**/*.png
+!fixtures/original-replays/*.nbr
+
+!fixtures/physics/recordings/*.nbr

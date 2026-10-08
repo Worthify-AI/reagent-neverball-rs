@@ -1,0 +1,10 @@
+{
+  "name": "glam",
+  "version": "0.27.0",
+  "license": "MIT OR Apache-2.0",
+  "authors": [
+    "Cameron Hart <cameron.hart@gmail.com>"
+  ],
+  "repository": "https://github.com/bitshifter/glam-rs",
+  "homepage": null
+}

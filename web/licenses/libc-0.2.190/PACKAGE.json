@@ -1,0 +1,8 @@
+{
+  "name": "libc",
+  "version": "0.2.190",
+  "license": "MIT OR Apache-2.0",
+  "authors": [],
+  "repository": "https://github.com/rust-lang/libc",
+  "homepage": null
+}

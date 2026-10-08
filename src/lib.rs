@@ -1,3 +1,11 @@
+pub mod camera;
+pub mod content;
+pub mod entities;
+pub mod flow;
+pub mod physics;
+pub mod replay;
+pub mod settings;
+pub mod sol;
 // SPDX-License-Identifier: GPL-3.0-or-later
 use macroquad::prelude::{vec2, vec3, Vec2, Vec3};
 use serde::Deserialize;

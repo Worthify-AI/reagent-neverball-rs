@@ -1,0 +1,7 @@
+Physics regression fixtures
+
+These files contain runtime observations and exact delivered input ledgers from Neverball1.6.0 (Ubuntu package1.6.0+git20180603-3build2). Original implementation source was withheld. Numeric component measurements are distinguished from raw-key course recordings in PROVENANCE.json. NBR player labels are normalized to Fixture; recorded command streams are unchanged.
+
+Our runtime observations, input ledgers, and independently authored test code are distributed under GPL-3.0-or-later; see the repository LICENSE. Neverball and its original level/model assets are copyright Robert Kooima, Jean Privat and contributors and retain GPL-2.0-or-later and their original notices. See data/COPYRIGHT.debian and THIRD_PARTY_NOTICES.md. Compiled levels are in data/; corresponding authoring assets and licensing records accompany this repository.
+
+These fixtures contain no credentials, service/task receipts, private host paths, decompiled implementation, or internal debugger logs. All tests resolve fixture and SOL paths within CARGO_MANIFEST_DIR, fail if a required file is absent, and require no private workspace, reference executable, credential, network service, or VM.

@@ -1,0 +1,11 @@
+{
+  "name": "proc-macro2",
+  "version": "1.0.107",
+  "license": "MIT OR Apache-2.0",
+  "authors": [
+    "David Tolnay <dtolnay@gmail.com>",
+    "Alex Crichton <alex@alexcrichton.com>"
+  ],
+  "repository": "https://github.com/dtolnay/proc-macro2",
+  "homepage": null
+}

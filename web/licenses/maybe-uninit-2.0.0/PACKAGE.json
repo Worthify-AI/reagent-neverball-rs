@@ -1,0 +1,11 @@
+{
+  "name": "maybe-uninit",
+  "version": "2.0.0",
+  "license": "Apache-2.0 OR MIT",
+  "authors": [
+    "est31 <MTest31@outlook.com>",
+    "The Rust Project Developers"
+  ],
+  "repository": "https://github.com/est31/maybe-uninit",
+  "homepage": null
+}

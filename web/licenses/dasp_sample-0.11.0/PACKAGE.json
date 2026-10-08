@@ -1,0 +1,10 @@
+{
+  "name": "dasp_sample",
+  "version": "0.11.0",
+  "license": "MIT OR Apache-2.0",
+  "authors": [
+    "mitchmindtree <mitchell.nordine@gmail.com>"
+  ],
+  "repository": "https://github.com/rustaudio/sample.git",
+  "homepage": "https://github.com/rustaudio/sample"
+}

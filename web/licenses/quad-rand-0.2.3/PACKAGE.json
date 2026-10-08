@@ -1,0 +1,10 @@
+{
+  "name": "quad-rand",
+  "version": "0.2.3",
+  "license": "MIT",
+  "authors": [
+    "not-fl3 <not.fl3@gmail.com>"
+  ],
+  "repository": "https://github.com/not-fl3/quad-rand",
+  "homepage": "https://github.com/not-fl3/quad-rand"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "serde_core",
+  "version": "1.0.228",
+  "license": "MIT OR Apache-2.0",
+  "authors": [
+    "Erick Tryzelaar <erick.tryzelaar@gmail.com>",
+    "David Tolnay <dtolnay@gmail.com>"
+  ],
+  "repository": "https://github.com/serde-rs/serde",
+  "homepage": "https://serde.rs"
+}

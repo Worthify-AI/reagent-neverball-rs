@@ -1,0 +1,98 @@
+{
+  "license": "GPL-3.0-or-later",
+  "reference": "Neverball1.6.0 Ubuntu package1.6.0+git20180603-3build2",
+  "implementation_boundary": "Executable-generated observations only. Original engine implementation source and ports were withheld. Compiled SOL runtime data is distributed separately in data/ with corresponding authoring assets and original notices.",
+  "raw_key_method": "Independent Rust state starts from compiled SOL initial state and receives delivered raw arrow keys. Reference NBR states are compared, never injected. Fixed90Hz simulation under deterministic60Hz SDL frame clock; camera3 selected before arrow input. These are bounded short routes, not full course completion recordings.",
+  "orientation_method": "Two1123-update runs feed recorded tilt/basis and collision-step timing to an independently evolving ball; compare outer and inner orientation against recorded bases. This is a component comparison, not raw-key end-to-end coverage.",
+  "component_method": "Numerical measurements from direct calls to original executable functions using caller-owned synthetic structures: six collision cases, ten path samples, five jump predicates, three90-update core trajectories and eight item transitions. Timer fixture covers two shared fractional-millisecond schedules; path-budget fixture covers6ms paths within a100ms update. No decompiler text or debugger internals are included.",
+  "recordings": [
+    {
+      "file": "recordings/roundcoins.nbr",
+      "kind": "raw-key course",
+      "course": "map-easy/roundcoins.sol",
+      "original_recording_sha256": "f5860fefcf707bae4f6fbf962290ae01083541935b57ed3c934d5e2cb654401e",
+      "command_stream_sha256": "65e58acf40e161e7279801a33b162312d243d31500b2829d78c1d20b699651a6",
+      "sanitization": "Player label changed to Fixture; all command-stream bytes preserved.",
+      "delivered_input_ledger": "recordings/roundcoins-ledger.csv"
+    },
+    {
+      "file": "recordings/easytele.nbr",
+      "kind": "raw-key course",
+      "course": "map-medium/easytele.sol",
+      "original_recording_sha256": "edd79489dcebcf20ed0100dd491f2a407543916d4f14b77e7e2ae2561fd6334c",
+      "command_stream_sha256": "a69a0f1d0c17f0b330ae9f2e617584bc73e55c6a69fbcc8cf441243a10926ef9",
+      "sanitization": "Player label changed to Fixture; all command-stream bytes preserved.",
+      "delivered_input_ledger": "recordings/easytele-ledger.csv"
+    },
+    {
+      "file": "recordings/learngrow.nbr",
+      "kind": "raw-key course",
+      "course": "map-medium/learngrow.sol",
+      "original_recording_sha256": "b6e24eb09f7d60572ec9eb20747045ac6ce087442592566376f105a64035b030",
+      "command_stream_sha256": "ff25b8247028fee05e5996e8992e13698b294a5a9d958aead4a61c6b449c668e",
+      "sanitization": "Player label changed to Fixture; all command-stream bytes preserved.",
+      "delivered_input_ledger": "recordings/learngrow-ledger.csv"
+    },
+    {
+      "file": "recordings/locks.nbr",
+      "kind": "raw-key course",
+      "course": "map-medium/locks.sol",
+      "original_recording_sha256": "bd74655ae0225572b30f3013a84e1048ff87f3f2935a91bc3a5889dc5d5de26b",
+      "command_stream_sha256": "a88623bb73d45ed77ebf1ce884ce1756dd372de802c3a85bfa8cdddf9b023406",
+      "sanitization": "Player label changed to Fixture; all command-stream bytes preserved.",
+      "delivered_input_ledger": "recordings/locks-ledger.csv"
+    },
+    {
+      "file": "recordings/curved.nbr",
+      "kind": "raw-key course",
+      "course": "map-easy/curved.sol",
+      "original_recording_sha256": "cd3bb38a7a99157a177519cd4e8dfe1477968b6c0b443606fbcf77449eb63bc1",
+      "command_stream_sha256": "cb6ee27c141640d05686ec8af3fa22b35e63b50130397bfb249b7f6e5326a488",
+      "sanitization": "Player label changed to Fixture; all command-stream bytes preserved.",
+      "delivered_input_ledger": "recordings/curved-ledger.csv"
+    },
+    {
+      "file": "recordings/thwomp2.nbr",
+      "kind": "raw-key course",
+      "course": "map-easy/thwomp2.sol",
+      "original_recording_sha256": "4cf63e5170f3f5a58eabf3d7e7790912bc5dd88f298d354b7241f39ad79941fb",
+      "command_stream_sha256": "592bd913f1b0f0785be24e1c6f542b315c1cd9cef74268103db4b3c3d46dcebe",
+      "sanitization": "Player label changed to Fixture; all command-stream bytes preserved.",
+      "delivered_input_ledger": "recordings/thwomp2-ledger.csv"
+    },
+    {
+      "file": "recordings/adventure.nbr",
+      "kind": "raw-key course",
+      "course": "map-fwp/adventure.sol",
+      "original_recording_sha256": "afbf17a750511b5a6f11970477b699bd0a5f014dd6b13722c6121c5a078f5ed9",
+      "command_stream_sha256": "2afdd2572cdd4fca9ea9e0a2493347f8c2a743c0c13c368a227d79bd27d08f61",
+      "sanitization": "Player label changed to Fixture; all command-stream bytes preserved.",
+      "delivered_input_ledger": "recordings/adventure-ledger.csv"
+    },
+    {
+      "file": "recordings/orientation-straight.nbr",
+      "kind": "recorded tilt/basis orientation",
+      "course": "map-easy/easy.sol",
+      "original_recording_sha256": "c3b12d1a2f512cf135f8d084068f8a767537f0edb4f1fd0be9b356dbcd61459b",
+      "command_stream_sha256": "1c84099a6f6b20733142f7cc790f9fd74cc5c34218c33907dbf84f9b8a7619e9",
+      "sanitization": "Player label changed to Fixture; all command-stream bytes preserved."
+    },
+    {
+      "file": "recordings/orientation-turning.nbr",
+      "kind": "recorded tilt/basis orientation",
+      "course": "map-easy/easy.sol",
+      "original_recording_sha256": "bfac0b729cb4b8355dab60dcc94c718ecfe86994fb766f7878444ebc78742f7e",
+      "command_stream_sha256": "743acdfb34c31ac427c5e0b11a226f62788c8f8253acf531e891dc3b7c98aac7",
+      "sanitization": "Player label changed to Fixture; all command-stream bytes preserved."
+    }
+  ],
+  "bounded_coverage": {
+    "roundcoins": "Three switches, four toggles,20 coins and repeated elevator contacts.",
+    "easytele": "Jump start, one-second freeze, teleport, fall and result motion.",
+    "adventure": "Shrink pickup and46 radius commands including initial radius; fall and result motion.",
+    "learngrow": "Three coins and fall; short route did not reach a size item.",
+    "locks": "Short roll and fall; did not enter a switch.",
+    "curved": "Curved static surface and fall.",
+    "thwomp2": "Moving-obstacle course, one coin and fall; no separate claim of an obstacle impact."
+  }
+}

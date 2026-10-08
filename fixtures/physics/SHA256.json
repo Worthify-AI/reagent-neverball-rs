@@ -1,0 +1,820 @@
+{
+  "NOTICE.txt": {
+    "bytes": 1199,
+    "sha256": "07bb7f48f40d4ce2973d8391906c241b3fa15dbaecea6bfc251f4ff3884034be"
+  },
+  "PROVENANCE.json": {
+    "bytes": 6339,
+    "sha256": "940d7df3bfae5352a23260abe0fc1bb057b4e53e27f01d14f7e6b1883a672a9b"
+  },
+  "component-results.json": {
+    "bytes": 98934,
+    "sha256": "c19f7f2055a7cb73ac774c5ccccaed74d31ece524bab84cf41d8776cf4fb1623"
+  },
+  "path-budget-results.json": {
+    "bytes": 191,
+    "sha256": "b30e9e2a41e0137a6d06be6fb92e1903b41c51d82d5d693b8f9eb75ff918e6ec"
+  },
+  "recordings/adventure-ledger.csv": {
+    "bytes": 254,
+    "sha256": "9b092b9aa6c76a9ecc7c5a142f3673e992271d11bf89e739afa8082cfa7e6724"
+  },
+  "recordings/adventure.nbr": {
+    "bytes": 72691,
+    "sha256": "174f898241c1fc36f4a5e2095afc7d88b08e3cdb9a3ba9dae68ccb3892227a08"
+  },
+  "recordings/curved-ledger.csv": {
+    "bytes": 254,
+    "sha256": "b3b63db0058e8b06b7d044c70d6b06911b056053fcedda503d3dc11caf2cc9d3"
+  },
+  "recordings/curved.nbr": {
+    "bytes": 79695,
+    "sha256": "60c7b1c2f72fe92c086e93d7ae8c9e86ac9fe4e99f2f62770fa75a800a5017f4"
+  },
+  "recordings/easytele-ledger.csv": {
+    "bytes": 254,
+    "sha256": "b3b63db0058e8b06b7d044c70d6b06911b056053fcedda503d3dc11caf2cc9d3"
+  },
+  "recordings/easytele.nbr": {
+    "bytes": 108565,
+    "sha256": "84ad0f57d9597ed3851af77c0ee980b2a4f19bb260140caf7688dfd9492337a9"
+  },
+  "recordings/learngrow-ledger.csv": {
+    "bytes": 254,
+    "sha256": "b3b63db0058e8b06b7d044c70d6b06911b056053fcedda503d3dc11caf2cc9d3"
+  },
+  "recordings/learngrow.nbr": {
+    "bytes": 120872,
+    "sha256": "4f006ff76552d676b3e1582cebc63c8a107dc4c3a0966f60e5ca116184f7ed06"
+  },
+  "recordings/locks-ledger.csv": {
+    "bytes": 166,
+    "sha256": "9b2534f0f6258332ca37171485e77fdd89dacb023fbb4629e9c46a93081bf699"
+  },
+  "recordings/locks.nbr": {
+    "bytes": 71163,
+    "sha256": "77c4b02cceda14309abb4212574b56ea679c5c36f1abff9c60d58686a4e5633e"
+  },
+  "recordings/orientation-straight.nbr": {
+    "bytes": 207912,
+    "sha256": "40e4f79c782d28721c8baf9591d472201947ada4d97157ad143dd4bba234020a"
+  },
+  "recordings/orientation-turning.nbr": {
+    "bytes": 208027,
+    "sha256": "c01528dc2667b6f44a32353a6142b1516a99c84e566ce91d31ccaede6e33cc5a"
+  },
+  "recordings/roundcoins-ledger.csv": {
+    "bytes": 254,
+    "sha256": "b3b63db0058e8b06b7d044c70d6b06911b056053fcedda503d3dc11caf2cc9d3"
+  },
+  "recordings/roundcoins.nbr": {
+    "bytes": 143333,
+    "sha256": "ee89157b18bb4112f63efc458a0ed2e33b8ae8ddfefb88a5567baebfe3a5f03a"
+  },
+  "recordings/thwomp2-ledger.csv": {
+    "bytes": 254,
+    "sha256": "b3b63db0058e8b06b7d044c70d6b06911b056053fcedda503d3dc11caf2cc9d3"
+  },
+  "recordings/thwomp2.nbr": {
+    "bytes": 82866,
+    "sha256": "e6b101df4321ce6dd68f4da494e062f6276b3ff473fb63d7c253172b12ba77e4"
+  },
+  "switch-clock-results.json": {
+    "bytes": 2082,
+    "sha256": "a41ebb885ea5833d71b41a1a54df4871e28efa94c6d983441b185232fc92e053"
+  },
+  "runtime_levels": {
+    "data/map-easy/bumper.sol": {
+      "bytes": 472597,
+      "sha256": "b626ff3c37006638564e90285de416c4ed4b0ea00be680f79bdcf626ad63272b"
+    },
+    "data/map-easy/bumps.sol": {
+      "bytes": 42771,
+      "sha256": "d9a8d259cb645cf1cde562a76714fd163133ecfae51135ce53d42eb5b29a7bb2"
+    },
+    "data/map-easy/coins.sol": {
+      "bytes": 133024,
+      "sha256": "4ccc2bc451e40378b28a3795270ead7779fc6d1fd2d7106388691521ec75f8f1"
+    },
+    "data/map-easy/corners.sol": {
+      "bytes": 273616,
+      "sha256": "d264f1bc49396dcf05b62a4f9dc7ad2d077ec986b77a4a4593516a28a7977f82"
+    },
+    "data/map-easy/curved.sol": {
+      "bytes": 134444,
+      "sha256": "9b363d414fc2d9ffa1c4a9d62eaad70ca583244def56ced5b35056e08af61847"
+    },
+    "data/map-easy/easy.sol": {
+      "bytes": 162716,
+      "sha256": "94c7a033ba111811bea4ed45bb6cb10d2f9b02ac6cdc698c13225f8aa6c48148"
+    },
+    "data/map-easy/easyhalfpipe.sol": {
+      "bytes": 249882,
+      "sha256": "0f904cd40024f52541ba009472abf6b18d3540e186124fe21f9a4e673dce803c"
+    },
+    "data/map-easy/fence.sol": {
+      "bytes": 537722,
+      "sha256": "afef757c7ac422e6304c9b4d901fb717845272286417f15e9874c67f10a4bcc5"
+    },
+    "data/map-easy/goals.sol": {
+      "bytes": 68313,
+      "sha256": "b33d90444052632f759b455818001e6b582d7c751bd3cca844cdddf73840071c"
+    },
+    "data/map-easy/goslow.sol": {
+      "bytes": 430749,
+      "sha256": "6cb5b27a3bc8e85e3e48eed10316c24f2a8073aa607de6e9cc466b39b37801ac"
+    },
+    "data/map-easy/greed.sol": {
+      "bytes": 135916,
+      "sha256": "9528d69af697abb3f3e8eff0edac01f2ff1c5e8aabaee4767847f1be45cb68fb"
+    },
+    "data/map-easy/groundbreak.sol": {
+      "bytes": 223053,
+      "sha256": "27ae04a4c21b9411f5d260b5391fa0721d4a090f313840306bc280c5a7ae3e28"
+    },
+    "data/map-easy/hole.sol": {
+      "bytes": 124759,
+      "sha256": "c3fb83c082ea1d525a1485900ec982b38e223595fc252ad1e3bffa749210669e"
+    },
+    "data/map-easy/lollipop.sol": {
+      "bytes": 258699,
+      "sha256": "c194482187d10d5a6985d6d896660d1ff887f7d175faa7f5f0b4f304372bb511"
+    },
+    "data/map-easy/maze.sol": {
+      "bytes": 86993,
+      "sha256": "9db2391623ce1786e52fbec02898b603cc8e22115be7347d5a5db1755a1abc93"
+    },
+    "data/map-easy/mazebump.sol": {
+      "bytes": 1112430,
+      "sha256": "8f83f23cfcfcd9dde704d11e5b61cfe3c8265e4acdedbf4865d6b0d461f84524"
+    },
+    "data/map-easy/mover.sol": {
+      "bytes": 192308,
+      "sha256": "aa58e70af82781bb4c71dcf43cd0c88bf2c0f0813e00f6d753842183e441d910"
+    },
+    "data/map-easy/peasy.sol": {
+      "bytes": 155412,
+      "sha256": "25b17926db315b85bd473ec110cbe70257565bf31973aea86de80c1a2125ebc7"
+    },
+    "data/map-easy/roundcoins.sol": {
+      "bytes": 826425,
+      "sha256": "630e63b6d75704b2923592f4095fb0578e68c8129eac10590dc5e7f13bb92c47"
+    },
+    "data/map-easy/roundlaby.sol": {
+      "bytes": 575100,
+      "sha256": "42cf82ead61d38d295639c3981957bb5c360222bfdbc3a952658d0b658e1a078"
+    },
+    "data/map-easy/slalom.sol": {
+      "bytes": 226202,
+      "sha256": "d508f736df2ee21118fb7361948d757e44e475cbac8d5fd1bb48f8bf51c1b325"
+    },
+    "data/map-easy/slightcurve.sol": {
+      "bytes": 587306,
+      "sha256": "8fab8c1d773f0f3618d00f872b3514d18fda5eeaf68405620a2d070a68a016f5"
+    },
+    "data/map-easy/speedbumps.sol": {
+      "bytes": 229776,
+      "sha256": "903e56de912f8b0e29bd0ea26ab4b245e05411c84da937149cad0219aa190c2d"
+    },
+    "data/map-easy/thwomp2.sol": {
+      "bytes": 466396,
+      "sha256": "863a4098c5b1afe23889f0a509ff3e3c744e8320b8be30bc8c489030235212d6"
+    },
+    "data/map-easy/wakka.sol": {
+      "bytes": 250559,
+      "sha256": "b18e69167dc790b9f48f42720e0c1282ec7e63fe4354738abbcdb8f289b4c251"
+    },
+    "data/map-fwp/adventure.sol": {
+      "bytes": 2935406,
+      "sha256": "59f3af2360ed95edd6319a63ae30bbb772fe6547aaf2b4eef081a5dd35c44866"
+    },
+    "data/map-fwp/atrium.sol": {
+      "bytes": 448449,
+      "sha256": "01e86eb9b63d8b0743de8971f1c65d4bbb89adb540eeec81d3df8634ff589157"
+    },
+    "data/map-fwp/buoys.sol": {
+      "bytes": 2120054,
+      "sha256": "7a89678a273243cfddd4fd6d143eb36632b8f05c24067ca92fa66b4079ec704b"
+    },
+    "data/map-fwp/cargo.sol": {
+      "bytes": 596507,
+      "sha256": "c5e51e2c906d14b80994f032176870ab01fb99f9d9cb5a0c2438bf427b17cbd0"
+    },
+    "data/map-fwp/confetti.sol": {
+      "bytes": 704283,
+      "sha256": "a19fe0aab456d6a4be9e3eb3ad66461249ab03d837f8cb7387b0450f38a73aef"
+    },
+    "data/map-fwp/discs.sol": {
+      "bytes": 1393290,
+      "sha256": "7ada4c5b9ac24db52c1cce58cd606fa86db231a987e0dfb6868d38ce4b3566d5"
+    },
+    "data/map-fwp/inferno.sol": {
+      "bytes": 2078201,
+      "sha256": "c79021d4b5167bf125ad3b625c74e2f0b90e8f96db3cce3b33d461c1cdf4fdee"
+    },
+    "data/map-fwp/ladybirds.sol": {
+      "bytes": 1653519,
+      "sha256": "8fadd9891acad48872eb31be09c1f42a532ad49600b87c4bf22b837de0450a76"
+    },
+    "data/map-fwp/mountains.sol": {
+      "bytes": 891129,
+      "sha256": "6ea5f71ea7221229f127e89b31f9a621740b2ed5cd029b7b381778721986fb31"
+    },
+    "data/map-fwp/museum.sol": {
+      "bytes": 449462,
+      "sha256": "b23f6fb6510df82661b4c3003f860831b921ca795c367e818c9c89d732ba15f7"
+    },
+    "data/map-fwp/oddities.sol": {
+      "bytes": 799820,
+      "sha256": "8b6c34163610666cc4900a3a9c5fd07549549744fd069e6018e15a00c52eb071"
+    },
+    "data/map-fwp/rails.sol": {
+      "bytes": 912591,
+      "sha256": "3137b497a089ef1501373be92b5ae06ae4e8eb1f065b8bb544edd706c6693c5e"
+    },
+    "data/map-fwp/ramps.sol": {
+      "bytes": 1064466,
+      "sha256": "30b7ceb736a57f4eb8f151d69f65d5b6f97e88119d48de8b59657e35af7fe243"
+    },
+    "data/map-fwp/rings.sol": {
+      "bytes": 2142408,
+      "sha256": "5c7296720e8690d514d8a0767608302d270e1522f966dc960e27a9da02db7207"
+    },
+    "data/map-fwp/slope.sol": {
+      "bytes": 507612,
+      "sha256": "2f4a23589250370722030f7aa58fe1dcbd2b17b23939ebef1c2c394c8b7bf16d"
+    },
+    "data/map-fwp/spacetime.sol": {
+      "bytes": 1667123,
+      "sha256": "5a94a48d5c71cba55820f927f21f9debe542a1bcd489f2ce4c42bb3d907a8705"
+    },
+    "data/map-fwp/swarm.sol": {
+      "bytes": 243730,
+      "sha256": "8ea3143f2a03beea7e421e595c3d8d8e9b4b4523bc0010995e216d58b2a94be6"
+    },
+    "data/map-fwp/tennis.sol": {
+      "bytes": 487309,
+      "sha256": "d7a903eef2d4abeff3367eb800d327ab4f528caedd5db5a910b910d01074004d"
+    },
+    "data/map-fwp/tree.sol": {
+      "bytes": 852987,
+      "sha256": "152905fb1c577476bcfa2c83dd81990bb1c5fa6d9c54fd7c24f951d72e88daa0"
+    },
+    "data/map-fwp/ufo.sol": {
+      "bytes": 1693924,
+      "sha256": "77c8ab6d887ecd68963ea8ef997126981c88d789d88d7d86a8d52246601672da"
+    },
+    "data/map-hard/airways.sol": {
+      "bytes": 741420,
+      "sha256": "116f5bf3733c33c96cfbedc76337421295f184a2142d3d12525ac5c794595f31"
+    },
+    "data/map-hard/check.sol": {
+      "bytes": 34925,
+      "sha256": "381f8510f1574c952c72b98b19b26aaff964a0cbb281f20eec33563974444bb0"
+    },
+    "data/map-hard/curbs.sol": {
+      "bytes": 234142,
+      "sha256": "6fd96b4559ceb098dba2b39e9e475c8f31b532520eeb975132acd6d1da7d6790"
+    },
+    "data/map-hard/flip.sol": {
+      "bytes": 1061202,
+      "sha256": "fd9860baeed7ee605cebe80ec59d15be01b029622a8125e762a60502ac23af24"
+    },
+    "data/map-hard/frogger.sol": {
+      "bytes": 237543,
+      "sha256": "13e8062b4f93a641aa8e5fcd33e94f85eeb6c2d3f306d858d61a1d9a45c2de5a"
+    },
+    "data/map-hard/gaps.sol": {
+      "bytes": 27400,
+      "sha256": "f00aa22b3c5c5159ba8ce3e9787a4fe46aa97a0f4f3df1dff362d859054218c1"
+    },
+    "data/map-hard/grid.sol": {
+      "bytes": 79917,
+      "sha256": "9dc867ddaaf854a35e4800b892addd386c9cb803a85d2b4ef29141385b5f2bef"
+    },
+    "data/map-hard/hallways.sol": {
+      "bytes": 135177,
+      "sha256": "0f3c1ef73362d1352d2c03dee16f83bf25eb81185a8c8eb958b4d5edff0d3549"
+    },
+    "data/map-hard/hump.sol": {
+      "bytes": 123513,
+      "sha256": "c835c473fd851a564c3665adf14192a26d620709412ce927e1a64a963646cadb"
+    },
+    "data/map-hard/invis.sol": {
+      "bytes": 12915,
+      "sha256": "ccd3b232785c20d572d23a01cb21f88fc96000921d1c2b9c5a3bc8cf8615188f"
+    },
+    "data/map-hard/movers.sol": {
+      "bytes": 44292,
+      "sha256": "e03fb437f712a1f1067ddccce28c98911f0efe98cce772b7cbf77b57da4e3f22"
+    },
+    "data/map-hard/nostairs.sol": {
+      "bytes": 98241,
+      "sha256": "4f8cb41e366f9a754937adab5382511bf7d015e80d87d017336caf0afe58cffc"
+    },
+    "data/map-hard/paths.sol": {
+      "bytes": 236837,
+      "sha256": "c814cf77b13d4f9c4da8bfc412ce8461584f7facb110ee377621c68ca514bdfe"
+    },
+    "data/map-hard/pipe.sol": {
+      "bytes": 480609,
+      "sha256": "34a40b21ca7c04f2c638303f3c20a6a5bb3c011bae7cf64b2f6d2bb46d5c954e"
+    },
+    "data/map-hard/poker.sol": {
+      "bytes": 64851,
+      "sha256": "daf6437bb7c7bd57011933e39965860a8e3424a23dcbce611aba83470fd85db2"
+    },
+    "data/map-hard/pyramid.sol": {
+      "bytes": 58612,
+      "sha256": "c4b186bae90c10d2a21d1c759280b3b4d15f5045535a93c7071872b8c70407dc"
+    },
+    "data/map-hard/quads.sol": {
+      "bytes": 164949,
+      "sha256": "2c7d94fb39436deb8946b23bdda480d1ab45eaca4aac59e49e3c9333761fe9c7"
+    },
+    "data/map-hard/rampup.sol": {
+      "bytes": 418808,
+      "sha256": "7c3379cb39c8f1f8ca222d69a66de24f6bba062f7e36c39a7c104c410ebc7588"
+    },
+    "data/map-hard/ring.sol": {
+      "bytes": 313522,
+      "sha256": "37cf8f817bae963c3c931119e3dbfc3b86d407d2377b7c29973a6396dab49471"
+    },
+    "data/map-hard/risers.sol": {
+      "bytes": 19339,
+      "sha256": "04fbf35ef7714fdd8341ad19ba85b87dc04d00122c64e763334a5167604d436b"
+    },
+    "data/map-hard/spiralin.sol": {
+      "bytes": 199620,
+      "sha256": "6bde4694f04fea1e1d1a23dbea37288610e9a9ee81ec669988a7e0d0ddea7dd4"
+    },
+    "data/map-hard/spread.sol": {
+      "bytes": 249712,
+      "sha256": "da04580ab32e6049129094bb9da6ac0ae53908268144fd67595c07d0806abf78"
+    },
+    "data/map-hard/sync.sol": {
+      "bytes": 18454,
+      "sha256": "351ddd42f5dd751f7bea93e314b02c98539bc489b1ab6774fd841058abeb1361"
+    },
+    "data/map-hard/teleport.sol": {
+      "bytes": 37489,
+      "sha256": "b6e431113565591106a54eaeb11660376b43b2c84b6c6855b0dba08d2a3a9df4"
+    },
+    "data/map-hard/tilt.sol": {
+      "bytes": 29763,
+      "sha256": "dcd4d0e6f52b5804db38b8a64b79eebc521fefacaffb2d1511850db316b5fc3e"
+    },
+    "data/map-medium/accordian.sol": {
+      "bytes": 161432,
+      "sha256": "72374da3dcfc3fac909249c8f2480ae139d28001adfaf942bf53a57165ea4055"
+    },
+    "data/map-medium/angle.sol": {
+      "bytes": 162213,
+      "sha256": "58500011455384fd331bf4fd2789c0dc9f4f7babdc1207d18e93ab5a8cf3f0f2"
+    },
+    "data/map-medium/coneskeleton.sol": {
+      "bytes": 969152,
+      "sha256": "3c084c7843508698378acbbfdd98e04f174d87fadf5a8bed0eda4b557e310e49"
+    },
+    "data/map-medium/cross.sol": {
+      "bytes": 348708,
+      "sha256": "aadc8b52129cc86b67b7662c57584f16c3e59aaa566be13526d959df54d8458c"
+    },
+    "data/map-medium/drops.sol": {
+      "bytes": 54844,
+      "sha256": "c17436154a93b52ae215e5bf3ea3f593dde79db5605fc4702744b6b18a871299"
+    },
+    "data/map-medium/easytele.sol": {
+      "bytes": 49328,
+      "sha256": "f0ca606f2f2d47c0b873eb77ac04288e10d38855fadebe54558fd6d1c1d9f2c3"
+    },
+    "data/map-medium/four.sol": {
+      "bytes": 38223,
+      "sha256": "6a199a7db796b5119f8507c0b65df0a1246594f23d40d87370f6fe6a57d66d6f"
+    },
+    "data/map-medium/hardrise.sol": {
+      "bytes": 343592,
+      "sha256": "b2f181a3194254eacfc8532d832f37b20f066b258b877467e21da7e1f26756b1"
+    },
+    "data/map-medium/islands.sol": {
+      "bytes": 20391,
+      "sha256": "06d30f64cf0e329a28d79289f19a52e14a52f4000bc81dc6e96a55f2b0e500db"
+    },
+    "data/map-medium/learngrow.sol": {
+      "bytes": 1337214,
+      "sha256": "52f86807764c064771c3316b365ae8aab9a4018d95b0bb4948e4fa3bc4cabb22"
+    },
+    "data/map-medium/locks.sol": {
+      "bytes": 52380,
+      "sha256": "977d02e8fab5b84da09b162e561891e41029a12a58cf6040512f9333713aae21"
+    },
+    "data/map-medium/multicurves.sol": {
+      "bytes": 1409941,
+      "sha256": "8ed06ff6cd9ee0b2b208f0d0dbc70317d5dd9de2fb5e8546235f86e9242fe9ce"
+    },
+    "data/map-medium/plinko.sol": {
+      "bytes": 318299,
+      "sha256": "933ff005672e41f2f229d291e4017c87383463f626966d32459cbbebbf8d6a29"
+    },
+    "data/map-medium/qbert.sol": {
+      "bytes": 174043,
+      "sha256": "eb6da1e47a41b30b8eb8051c83a9027b3f2445ac1e01e1efbbb77d12d636e5e6"
+    },
+    "data/map-medium/rampdn.sol": {
+      "bytes": 38138,
+      "sha256": "549848f7bd9d181a3cd3784ad3a226b55918e916012c8686320633d4bc0eb9c5"
+    },
+    "data/map-medium/roundfloors.sol": {
+      "bytes": 385458,
+      "sha256": "9b657abef2c5555c9afad8c06537c6f86e529634bcfd7432a3f9ded2c7c4e673"
+    },
+    "data/map-medium/sparselines.sol": {
+      "bytes": 296246,
+      "sha256": "da31f00b85a35793c370312529e478e47180669288829aec866b5fea8fe4bed8"
+    },
+    "data/map-medium/spiraldn.sol": {
+      "bytes": 119561,
+      "sha256": "b810c09174c224825aa603388482edc1370a69220a3be76cdf59f691a4371a19"
+    },
+    "data/map-medium/spiralup.sol": {
+      "bytes": 115510,
+      "sha256": "cf25e7b60a1018f2bd002d1a937d4b3cd001fee7fcf327c365ca12d42a010736"
+    },
+    "data/map-medium/stairs.sol": {
+      "bytes": 43151,
+      "sha256": "7a1d7c21078cfe4aafb9dfd9d4f92c21ed6ad81e09b9da573cb9e46525280029"
+    },
+    "data/map-medium/telemaze.sol": {
+      "bytes": 73121,
+      "sha256": "5c9b3e6e6b174c04b151f9f9d8641d8d715b3ee6f21f3c130a461a93eb2b141a"
+    },
+    "data/map-medium/timer.sol": {
+      "bytes": 48718,
+      "sha256": "1e8286f68201cc5b7e6548438cf259a1c43d4b617fd65d3d8921311c0e1f204b"
+    },
+    "data/map-medium/title.sol": {
+      "bytes": 163792,
+      "sha256": "b3fe3c093bfa5f8457f4182f7176643e9854193d9ced47d73c5c77404d91a588"
+    },
+    "data/map-medium/woodmaze.sol": {
+      "bytes": 1016231,
+      "sha256": "240f97beb2cd72cefeefca7d1235c72a6051a15d93ee9b52ce14864b7ae09b08"
+    },
+    "data/map-medium/zigzag.sol": {
+      "bytes": 103894,
+      "sha256": "f89df294a7bba4658b6a2853afb05d3808ed8a9ba1cac441e7704afb01723af9"
+    },
+    "data/map-misc/bigball-old.sol": {
+      "bytes": 295683,
+      "sha256": "ad67801464338060f63da14efe5fc85666fd5e2d3cb9f673a9ccc0f74ed459a4"
+    },
+    "data/map-misc/billiard.sol": {
+      "bytes": 263657,
+      "sha256": "a330de96a7e50d8768a9bba8472a70457d985221b1bbeb370545a144e9583b2c"
+    },
+    "data/map-misc/blockers.sol": {
+      "bytes": 477301,
+      "sha256": "f1f80f7623560e6761f8ab76b605b71a21dfb164bbbcf8842988fe508395c413"
+    },
+    "data/map-misc/bounce.sol": {
+      "bytes": 37596,
+      "sha256": "fde9152df0ff12021ab407ebedf8b8d0ce66e9b16de05ea141496a3b1b1933e5"
+    },
+    "data/map-misc/bounce2.sol": {
+      "bytes": 56166,
+      "sha256": "43fb0bf5a8e4ad85475b5623eb7fb3924c3b9e6ba57da087c334e1ab081cd878"
+    },
+    "data/map-misc/centrifuge.sol": {
+      "bytes": 25605,
+      "sha256": "850e3998cef8df296f9ccdd43ac3fca4d7899749bbe709a7b6aa3b0ef32a7921"
+    },
+    "data/map-misc/checkers.sol": {
+      "bytes": 100966,
+      "sha256": "46cc34c4e06e3f527a24531385d1566e28341c7f5a7e1d4584c94843b90dca1e"
+    },
+    "data/map-misc/edge-test.sol": {
+      "bytes": 3397,
+      "sha256": "e566cad4b12b387d93d2a6fddd3fed6d73a1b70852aa63050be9b303ee88343f"
+    },
+    "data/map-misc/elevator.sol": {
+      "bytes": 76989,
+      "sha256": "451aafcd813b2a0b9ed4833300c2e932cee02e69c03a69ad3739e25a3c7abb4e"
+    },
+    "data/map-misc/freefall-old.sol": {
+      "bytes": 342942,
+      "sha256": "58581253a2203095510b221f6c06a0579e01441b61c5b2801f94f0e7d75b346c"
+    },
+    "data/map-misc/grow_demo.sol": {
+      "bytes": 34796,
+      "sha256": "61746171a4a858c9b52108ad12f2fb716be18e9fc13a4bbf8d7468aeae2bb337"
+    },
+    "data/map-misc/groweasy.sol": {
+      "bytes": 294782,
+      "sha256": "a2aeb996d3c3e49ae31d764c80e6799fe45c9cbc213c7d89d97acc199809a3b0"
+    },
+    "data/map-misc/ocean.sol": {
+      "bytes": 13419,
+      "sha256": "a3904226a7f055d6f3c8c52f1da7f001a1873d15438088abacb87abe762cb85a"
+    },
+    "data/map-misc/stairs.sol": {
+      "bytes": 438013,
+      "sha256": "a1b3e3d27b5424341b4871639ad95a4df4c58dcf97eb46ff77750c7ae5f2b01c"
+    },
+    "data/map-misc/texture-debug.sol": {
+      "bytes": 169711,
+      "sha256": "cc0d2f8c493c5f47b74dca9b42ce9332d387d405a61e01fcf11034008ef4a13b"
+    },
+    "data/map-misc/thwomp1.sol": {
+      "bytes": 122802,
+      "sha256": "574618963f54eb556c4b06d4ec0756a8035e3398c38b86c72d3a0362e5ef1c0a"
+    },
+    "data/map-misc/timer-test.sol": {
+      "bytes": 165624,
+      "sha256": "faf491c4c726b47063e4699da280e4291271eeb74ed5a52246d03fc2a8a253f5"
+    },
+    "data/map-misc/timer-test_2.sol": {
+      "bytes": 35201,
+      "sha256": "ee4ee652e719a297785e22173ae09bc8231bc2d6488e58293849c243e8982348"
+    },
+    "data/map-mym/assault.sol": {
+      "bytes": 775667,
+      "sha256": "9e0b74bc0da77afb172b6e6a4d7afee17f59b26bc191b28bffc887393450b221"
+    },
+    "data/map-mym/circuit1.sol": {
+      "bytes": 1319297,
+      "sha256": "a12512509ad2e4fa01cb3435470d765c794b3113b595c5884616829ad9e94eb2"
+    },
+    "data/map-mym/circuit2.sol": {
+      "bytes": 978796,
+      "sha256": "0ef860b44b4df97fc1e5f507bc9edc4591757d2048794d89a011a6f81f52c3e3"
+    },
+    "data/map-mym/climb.sol": {
+      "bytes": 189998,
+      "sha256": "d6535808aa98f6ac944b3bd26defe8cc8035bf675eda1bb008f06d3b9ad9d48b"
+    },
+    "data/map-mym/comeback.sol": {
+      "bytes": 144059,
+      "sha256": "86d1c781e6358e212eb5567d488f376b95f28dcfccfa9689a4e4318eae98ff25"
+    },
+    "data/map-mym/dance1.sol": {
+      "bytes": 123731,
+      "sha256": "dc547f6cfe536d968887c8fcff17021e90129b02c776d781c22fe59c389ba517"
+    },
+    "data/map-mym/dance2.sol": {
+      "bytes": 204993,
+      "sha256": "a710fd42ed27a673d1f110d45e2e084438688255511bbf42e88e680551b0eb25"
+    },
+    "data/map-mym/descent.sol": {
+      "bytes": 193487,
+      "sha256": "656c2a0d728076af12f641d5ed7d6b52cb094fba271f8a0dc1dd519f0467ed4c"
+    },
+    "data/map-mym/drive1.sol": {
+      "bytes": 76653,
+      "sha256": "318a40c2833a3e46a24e4d710751e47a8d7711ffee5ee0fa651e42b2ab5b0c0f"
+    },
+    "data/map-mym/drive2.sol": {
+      "bytes": 196024,
+      "sha256": "e7a71dfa02bae0f40a30672991f311338dad1ed0c9f4381873e79f0846b8ec74"
+    },
+    "data/map-mym/earthquake.sol": {
+      "bytes": 51338,
+      "sha256": "450595ea2d98f21bc20eb5ebb6112cca94383d7063ef234b44158f510408a535"
+    },
+    "data/map-mym/ghosts.sol": {
+      "bytes": 563512,
+      "sha256": "6956d9d25fcb464159139748f38e5c97f8d04df009c6b1733c73314a92b12333"
+    },
+    "data/map-mym/glasstower.sol": {
+      "bytes": 171665,
+      "sha256": "cafa880f794c68eb3db75275c006bc24a60aa9fdd3e672d804347af0dd695c56"
+    },
+    "data/map-mym/hard.sol": {
+      "bytes": 1190646,
+      "sha256": "ef1a076c15c905fbd68a45658814e0b778ae459df47d5deab2afc64ad598b5ca"
+    },
+    "data/map-mym/loop1.sol": {
+      "bytes": 1188721,
+      "sha256": "315aed383282ded54edd50e8b014b79f6f7727046125c2203e9c690dadea9ee5"
+    },
+    "data/map-mym/loop2.sol": {
+      "bytes": 518160,
+      "sha256": "2c103cf8f7ed5f8620b7d61a0a8637d0085a770954c3c64251e1a4cf9be37438"
+    },
+    "data/map-mym/maze1.sol": {
+      "bytes": 76931,
+      "sha256": "0971183432ffdcbef408105b134b8a32aca9012a8f56c14c1c8898e6f1b0585f"
+    },
+    "data/map-mym/maze2.sol": {
+      "bytes": 165145,
+      "sha256": "92b66321d995214a18b94d493827a1bdb0651280c9662b138542d065a6bbbe62"
+    },
+    "data/map-mym/narrow.sol": {
+      "bytes": 104574,
+      "sha256": "d5408be092b0c1bd6d1755b1ab9a14f08967997a12cde9475769db36532d2171"
+    },
+    "data/map-mym/running.sol": {
+      "bytes": 808634,
+      "sha256": "116f067056e2b0465b6bcc33df6fbc29a4953aab7d74710f79f6021446f02a4a"
+    },
+    "data/map-mym/scrambling.sol": {
+      "bytes": 361397,
+      "sha256": "ba6342e3a3f1b085add8c44dc1b2d8bd68a254bee0263d6729b9d58731ed7282"
+    },
+    "data/map-mym/snow.sol": {
+      "bytes": 474677,
+      "sha256": "86bf0d2d07c8c6fe9b915da3d5ca765014b1df3d93bd04cf4b170f4c11136e65"
+    },
+    "data/map-mym/trust.sol": {
+      "bytes": 124657,
+      "sha256": "868e4399297877971497c123bcb2d3ee2793872a7a66227f2bb0da68ff525389"
+    },
+    "data/map-mym/turn.sol": {
+      "bytes": 1181938,
+      "sha256": "5cb2281abfc897f94cb416978cba4730b2591a6fba577a16e3a46956d9c252e9"
+    },
+    "data/map-mym/up.sol": {
+      "bytes": 292346,
+      "sha256": "7914dcb372fc2d52a5631c38a4842a4d4e7367cdd32c535cbe513af2cf664c35"
+    },
+    "data/map-mym2/backforth.sol": {
+      "bytes": 1041849,
+      "sha256": "8919e7f56304dbb2696792240e3b1f20d71bafbdf147de0bfce3daa27b221625"
+    },
+    "data/map-mym2/basket.sol": {
+      "bytes": 1102034,
+      "sha256": "a2d342e804d1d9cecdd87b0cf65f2d1923033094b8c0ca539842a72d1c7733a1"
+    },
+    "data/map-mym2/bigball.sol": {
+      "bytes": 963699,
+      "sha256": "6839313a7ea3d33ccc1da0b70a0ba749a96dc28fec38c4c0de5ea6cebee78511"
+    },
+    "data/map-mym2/bigcone.sol": {
+      "bytes": 1123152,
+      "sha256": "f5e2ceab4ca2841634ac379845e2e0c509082830164d3a784b640894a8e483f4"
+    },
+    "data/map-mym2/bombman.sol": {
+      "bytes": 402646,
+      "sha256": "12caeeaab3e26f0267d28f946635ac0b5b9c15820eafdbafee885e5b7dbd76bb"
+    },
+    "data/map-mym2/bounces.sol": {
+      "bytes": 48661,
+      "sha256": "c649cf4e13ce836a5804ac3e2ef64375542894488a8b8265d4ffdb89c68b0e7f"
+    },
+    "data/map-mym2/fall.sol": {
+      "bytes": 625889,
+      "sha256": "2522991aa48df286c6ce201fd040cd6d620532c40bffe92de17dc54fc1afbade"
+    },
+    "data/map-mym2/freefall.sol": {
+      "bytes": 1094047,
+      "sha256": "cf3bcb59a896b4a5dd60a37c06ba0d31d2e087a108adc52e2d752ba21e8a6400"
+    },
+    "data/map-mym2/grinder.sol": {
+      "bytes": 607629,
+      "sha256": "4ab0631f3c02a5ef861cc5f202a5cf3758f3b91eee69cc33c47f2d4b31943c36"
+    },
+    "data/map-mym2/littlecones.sol": {
+      "bytes": 668934,
+      "sha256": "7856e523aec80950e313d2663055942df91a088c91936504c064ca86587957e0"
+    },
+    "data/map-mym2/longpipe.sol": {
+      "bytes": 968269,
+      "sha256": "4b3ce25a7c0f486f2875f33c23815c9e503c82cc9084e283a711cd1eb5707af6"
+    },
+    "data/map-mym2/morenarrow.sol": {
+      "bytes": 566036,
+      "sha256": "46b5277da22d3bb35ba0dc9e01b608769b8290b212dc94da3e5e88c4887ca33c"
+    },
+    "data/map-mym2/movinglumps.sol": {
+      "bytes": 47150,
+      "sha256": "6336bf3a5438a08649cedd21a71863c74ec961d4ee3db35037274242e808fd73"
+    },
+    "data/map-mym2/movingpath.sol": {
+      "bytes": 100509,
+      "sha256": "91290f5553a5d46dfbd0e7444bad072a7ba31ac2ded64f0129638cc266d0d1bc"
+    },
+    "data/map-mym2/push.sol": {
+      "bytes": 303826,
+      "sha256": "03c510f3b2c75407565385703d115d161442cc45e2f050454cd23f9f2a1899cf"
+    },
+    "data/map-mym2/rainbow.sol": {
+      "bytes": 609132,
+      "sha256": "33c49e2845b032e9e65350e15f352c00227e1590ff3ab5f155a0877ee44cd702"
+    },
+    "data/map-mym2/rodeo.sol": {
+      "bytes": 142051,
+      "sha256": "7db486db834e5fc61509106bf2a3eeb3f000f01242f1f1f1802c4a86ceb565ca"
+    },
+    "data/map-mym2/runstop.sol": {
+      "bytes": 89169,
+      "sha256": "677253c4467ffdf96fa8f0c29ac5db6bfcdd2442336e7ebd4d33c8dfc74be6d4"
+    },
+    "data/map-mym2/shaker.sol": {
+      "bytes": 304712,
+      "sha256": "36e1051ce405ead370408c78e65169341128372b939cedd07d3a0c8695a6f35c"
+    },
+    "data/map-mym2/sonic.sol": {
+      "bytes": 1252772,
+      "sha256": "efc6e530d607857208d50815c4eb230909be432edc01f5d75496d46e694a5b91"
+    },
+    "data/map-mym2/speed.sol": {
+      "bytes": 593099,
+      "sha256": "ae4c9fa6f1a58d11d347fb3c873a40838fc5197fd714a35c97a9e4309bbe2dbe"
+    },
+    "data/map-mym2/speeddance.sol": {
+      "bytes": 118739,
+      "sha256": "8fed774dc9615abac685ca6a0862aa6350ae83f47386829a19e2c77f2e080544"
+    },
+    "data/map-mym2/translation.sol": {
+      "bytes": 880646,
+      "sha256": "ef5ba98fffb9c9e7f500688d24094950874321593259ee4e65ed1a8bdc627b09"
+    },
+    "data/map-mym2/updown.sol": {
+      "bytes": 81453,
+      "sha256": "bf2eafef89f3ba6dfbef590241a644a3fe08c6d84b570e08f793be84a22f2ab5"
+    },
+    "data/map-mym2/webs.sol": {
+      "bytes": 469208,
+      "sha256": "f812b107d49fa11f6e231f7186ff1302621a0b23b5b97185f45de8180919b29e"
+    },
+    "data/map-tones/bigtube.sol": {
+      "bytes": 731167,
+      "sha256": "5118f2775c62ac377de4768e070f375882e2916785f273256f452d209958ade8"
+    },
+    "data/map-tones/blue.sol": {
+      "bytes": 386392,
+      "sha256": "d8f785e138c008ea54aeb914435f3ee30676d689e0dbb02a79f2ec6351de40a7"
+    },
+    "data/map-tones/bumperoo.sol": {
+      "bytes": 666244,
+      "sha256": "f44d052b7471bfdbd767ffc4e38fab8a524753889cb1cfd21bb42d99aebfbdff"
+    },
+    "data/map-tones/canals.sol": {
+      "bytes": 307804,
+      "sha256": "708acd1af65240f8cdb3644339a2b1272ba7bf69ceb3ecff64cacc2b992d698f"
+    },
+    "data/map-tones/check.sol": {
+      "bytes": 598660,
+      "sha256": "8ce8a8891e2c7b645c2aacb2f581f2f9d5efc46f05190efa565a791211a9f405"
+    },
+    "data/map-tones/city.sol": {
+      "bytes": 71611,
+      "sha256": "2f1a5b927c4debe57b5cfa466288b4c03c398c0f243528c49759d4263a0de275"
+    },
+    "data/map-tones/discs.sol": {
+      "bytes": 779119,
+      "sha256": "15c30aaa584ae8b13a27d3114b5df7c64d9cac11562d0d6df5d85643d7d96a58"
+    },
+    "data/map-tones/easyian.sol": {
+      "bytes": 415811,
+      "sha256": "df57312d40f4213040c09643fe3ef268e11336d7aaafcbfa0d25e6644d0830d8"
+    },
+    "data/map-tones/easyone.sol": {
+      "bytes": 230797,
+      "sha256": "862cc429e2de2c2aee24b379eb7fa881aeb7ac4786d28581114e3338787f7c45"
+    },
+    "data/map-tones/hotwheels.sol": {
+      "bytes": 1259473,
+      "sha256": "f8291e5459d0bb6c4d8159e3f0390dbb9a2ce05ea8bdb50a1a8e1de3000c5350"
+    },
+    "data/map-tones/hurdles.sol": {
+      "bytes": 285645,
+      "sha256": "c5f436bb72c2f0d90d0ac0ca330e341b972e13dbb1b974f58eafdc3c042bc46b"
+    },
+    "data/map-tones/leaps.sol": {
+      "bytes": 99766,
+      "sha256": "cfe00991c5a8b3caf8d9e8ca1311f11ff068087bc553778bf3c331355a4693f9"
+    },
+    "data/map-tones/marble.sol": {
+      "bytes": 580166,
+      "sha256": "e65013d79c4ca13559a90c187a26413e8d6a37de4aa950ba501985b63c17d505"
+    },
+    "data/map-tones/runner.sol": {
+      "bytes": 486592,
+      "sha256": "2c970196373870cda613171448e8ed4edca2cdfe96b4194bd21441c5d31afc41"
+    },
+    "data/map-tones/skiball.sol": {
+      "bytes": 706252,
+      "sha256": "c36a16aeb3599a4dfa5592099112111c3519d547f1b16e486c91c38c23e13e16"
+    },
+    "data/map-tones/swish.sol": {
+      "bytes": 283244,
+      "sha256": "437a04209a2506e22328bdddb10b4afaec9f17380095306bd37f1b2a4cb26c3d"
+    },
+    "data/map-tones/swoop.sol": {
+      "bytes": 406068,
+      "sha256": "86d19b8aae15ab6dda226c95044293c9ea8ff47eee0f25bd9308ebdaa9746e57"
+    },
+    "data/map-tones/tonesmaze.sol": {
+      "bytes": 142458,
+      "sha256": "77cde8b283d5ff516b5e4edc05afccf70719b97ef1e9ab38299b1b1de6e4e090"
+    },
+    "data/map-tones/twisted.sol": {
+      "bytes": 537229,
+      "sha256": "d2ea7b99ca21bd6362044d37d6db7e6f1b28003d0027bfa7945d8450d695ae51"
+    },
+    "data/map-tones/waves.sol": {
+      "bytes": 311092,
+      "sha256": "a60eb9ac438448e0ca7f5ccbd189df0f82c85da9e5b63caeea9d7d3e6b9d17cf"
+    }
+  }
+}

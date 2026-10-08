@@ -1,0 +1,95 @@
+{
+  "origin": "Ubuntu neverball-data 1.6.0+git20180603-3build2",
+  "license": "GPL-2.0-or-later",
+  "method": "GNU gettext compiled MO catalog decoded to exact nonplural string pairs; no translation text generated",
+  "languages": [
+    {
+      "language": "de",
+      "label": "Deutsch",
+      "original_mo": "usr/share/locale/de/LC_MESSAGES/neverball.mo",
+      "original_mo_sha256": "0721512f35e3dad70924813b3a985285b800fecf00eab588865b755b89e9a8c6",
+      "generated_json": "locales/de.json",
+      "generated_sha256": "4657ffa216b28e9f9baca4b7f140bdc6fd032f5bd3f689b002419cc58c3dbede",
+      "strings": 359,
+      "preferred_form": "assets/neverball/source-full/po/de.po",
+      "po_sha256": "a5af04e4c639ca42b9454fc4f1d276417250cb93851cfab7f0cfdce31d4bc81e"
+    },
+    {
+      "language": "es",
+      "label": "Español",
+      "original_mo": "usr/share/locale/es/LC_MESSAGES/neverball.mo",
+      "original_mo_sha256": "6deaf2a70cbe08a5c3499c13797fcfce7b245e5a7515b069de68dc450b78cc23",
+      "generated_json": "locales/es.json",
+      "generated_sha256": "988fc1b328932b56b153b01734cd85f98c6bfe8a99d471957116d9c7ccc73d33",
+      "strings": 284,
+      "preferred_form": "assets/neverball/source-full/po/es.po",
+      "po_sha256": "6c1acea42f6859d2e042eb55cfa09b90e7aa9d3bf7af3bf790df68533a9b71ac"
+    },
+    {
+      "language": "fr",
+      "label": "Français",
+      "original_mo": "usr/share/locale/fr/LC_MESSAGES/neverball.mo",
+      "original_mo_sha256": "4f16e94f22ed1b41c4142051434ec2f90b48fbb1cd1459448e41d83301f07356",
+      "generated_json": "locales/fr.json",
+      "generated_sha256": "401c44f57ade5952544d926dfca7fce22806280e76790c1a15907e4cd859547d",
+      "strings": 358,
+      "preferred_form": "assets/neverball/source-full/po/fr.po",
+      "po_sha256": "8bba6cd45c69641a687212fa8064a451c4bbefa74b87ba2748ef6622f17615eb"
+    },
+    {
+      "language": "it",
+      "label": "Italiano",
+      "original_mo": "usr/share/locale/it/LC_MESSAGES/neverball.mo",
+      "original_mo_sha256": "ccebeff96ef604439443d366220aef5ae5d8e158bd3cf09b79cda2f60a8708d9",
+      "generated_json": "locales/it.json",
+      "generated_sha256": "07c5d40e4f469eb4412ec7f56ef506a4ce2a415933a613a9424a00885906f29a",
+      "strings": 359,
+      "preferred_form": "assets/neverball/source-full/po/it.po",
+      "po_sha256": "a905cf143224a7e1860a33b4a8b74db45a5b70728a4db8a81afeb614a07ed552"
+    },
+    {
+      "language": "pt_BR",
+      "label": "Português (Brasil)",
+      "original_mo": "usr/share/locale/pt_BR/LC_MESSAGES/neverball.mo",
+      "original_mo_sha256": "c57ce3219c9fcff0cc8c7421368a197c6ce209f7a521a1d9df5c1f9d4ac83c93",
+      "generated_json": "locales/pt_BR.json",
+      "generated_sha256": "67258c0d3008f0d66515efcc8087fabe6d76bb5dc5431811bdcdb422e51e7086",
+      "strings": 287,
+      "preferred_form": "assets/neverball/source-full/po/pt_BR.po",
+      "po_sha256": "7a18c438095627f370872d61e0cf4b9a9618320e652ffb36c82856c70de4214a"
+    },
+    {
+      "language": "nl",
+      "label": "Nederlands",
+      "original_mo": "usr/share/locale/nl/LC_MESSAGES/neverball.mo",
+      "original_mo_sha256": "a0650062fe28a4209aa55ea9e3c6efe1adca1c68bbf4e9932d907a6f29346ac0",
+      "generated_json": "locales/nl.json",
+      "generated_sha256": "0760820946e36badde30d63d5e5448bac51c898926501de8fea60db0b2782440",
+      "strings": 158,
+      "preferred_form": "assets/neverball/source-full/po/nl.po",
+      "po_sha256": "505f0844e9bebac67695ccad3817a57014fdab955079c532f6fbc6a4e6391cea"
+    },
+    {
+      "language": "pl",
+      "label": "Polski",
+      "original_mo": "usr/share/locale/pl/LC_MESSAGES/neverball.mo",
+      "original_mo_sha256": "0f7ce31783d589b2e28752ab275706f0a86e5e452e07d1c0a1dd021a005ce0cc",
+      "generated_json": "locales/pl.json",
+      "generated_sha256": "7404739fc65620b8c94e70f99b77dfbc5514de7f12d4407f9f4ca30074ad44ea",
+      "strings": 291,
+      "preferred_form": "assets/neverball/source-full/po/pl.po",
+      "po_sha256": "eabc449fa6fe04df00cda66b4895f3402089067f22bdf708eb3e390598c1a08c"
+    },
+    {
+      "language": "ru",
+      "label": "Русский",
+      "original_mo": "usr/share/locale/ru/LC_MESSAGES/neverball.mo",
+      "original_mo_sha256": "58a99133b5b9c5d286179c7950d145c28cd1fbfeaf61890b1676757933a37f25",
+      "generated_json": "locales/ru.json",
+      "generated_sha256": "d54696275075ae4572ebbaf3028f888ca35e2cd4ae57cb005c755a0a57bc3ab0",
+      "strings": 227,
+      "preferred_form": "assets/neverball/source-full/po/ru.po",
+      "po_sha256": "a51d1d68f474bb4064ea2b30491da194abb4f42ef581108eb53d4c0038d77378"
+    }
+  ]
+}
