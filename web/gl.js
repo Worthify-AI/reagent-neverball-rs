@@ -7,6 +7,7 @@
 // TODO: split to gl.js and loader.js
 
 "use strict";
+// Worthify modification: request a stencil buffer for floor-reflection masks.
 
 const version = 2;
 
@@ -26,7 +27,7 @@ var blocking_event_loop = false;
 
 function init_webgl(version) {
     if (version == 1) {
-        gl = canvas.getContext("webgl");
+        gl = canvas.getContext("webgl", {stencil: true});
 
         function acquireVertexArrayObjectExtension(ctx) {
             // Extension available in WebGL 1 from Firefox 25 and WebKit 536.28/desktop Safari 6.0.3 onwards. Core feature in WebGL 2.
@@ -88,7 +89,7 @@ function init_webgl(version) {
             alert("Cant initialize WEBGL_depth_texture extension");
         }
     } else {
-        gl = canvas.getContext("webgl2");
+        gl = canvas.getContext("webgl2", {stencil: true});
     }
     if (gl === null) {
         alert("Unable to initialize WebGL. Your browser or machine may not support it.");

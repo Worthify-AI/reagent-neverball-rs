@@ -72,3 +72,5 @@ Our independently authored Rust code: GPL-3.0-or-later (LICENSE). Inter font: SI
 - winapi-x86_64-pc-windows-gnu 0.4.0: MIT/Apache-2.0; retained notices: web/licenses/winapi-x86_64-pc-windows-gnu-0.4.0/
   The published crate contains no standalone license file; its declared license and attribution are retained in PACKAGE.json.
 - zlib-rs 0.6.8: Zlib; retained notices: web/licenses/zlib-rs-0.6.8/
+
+The self-hosted miniquad browser loader is modified to request a stencil buffer for floor-reflection masks. Its retained license is unchanged; loader-manifest.json records the modified-file hash. Worthify browser bridges provide polygon offset, local storage, controls and screenshot import/export.
