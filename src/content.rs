@@ -3,7 +3,7 @@
 use crate::sol::Sol;
 use serde::{Deserialize, Serialize};
 
-#[derive(Clone, Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub struct LevelSet {
     pub file: String,
     pub title: String,
@@ -13,11 +13,11 @@ pub struct LevelSet {
     pub records: [i32; 6],
     pub levels: Vec<String>,
 }
-#[derive(Clone, Debug, Default, Serialize, Deserialize)]
+#[derive(Clone, Debug, Default, PartialEq, Eq, Serialize, Deserialize)]
 pub struct Catalog {
     pub sets: Vec<LevelSet>,
 }
-#[derive(Clone, Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
 pub struct LevelSpec {
     pub path: String,
     pub title: String,
@@ -33,6 +33,62 @@ pub struct LevelSpec {
     pub time_records: Vec<i32>,
     pub coin_records: Vec<i32>,
     pub goal_records: Vec<i32>,
+}
+/// Browser catalogue generated from the same packaged SOL metadata as native menus.
+#[derive(Clone, Debug, PartialEq, Eq, Serialize, Deserialize)]
+pub struct LevelMetadataIndex {
+    pub version: u32,
+    pub catalog: Catalog,
+    pub levels: Vec<Vec<LevelSpec>>,
+}
+impl LevelMetadataIndex {
+    pub fn generate(
+        catalog: Catalog,
+        mut read: impl FnMut(&str) -> Result<Vec<u8>, String>,
+    ) -> Result<Self, String> {
+        let levels = catalog
+            .sets
+            .iter()
+            .map(|set| {
+                set.levels
+                    .iter()
+                    .map(|path| {
+                        let sol =
+                            Sol::from_bytes(&read(path)?).map_err(|e| format!("{path}: {e}"))?;
+                        Ok(LevelSpec::from_sol(path, &sol))
+                    })
+                    .collect::<Result<Vec<_>, String>>()
+            })
+            .collect::<Result<Vec<_>, String>>()?;
+        Ok(Self {
+            version: 1,
+            catalog,
+            levels,
+        })
+    }
+    pub fn parse(text: &str) -> Result<Self, String> {
+        let index: Self = serde_json::from_str(text).map_err(|e| e.to_string())?;
+        if index.version != 1
+            || index.catalog.sets.is_empty()
+            || index.catalog.sets.len() != index.levels.len()
+            || index
+                .catalog
+                .sets
+                .iter()
+                .zip(&index.levels)
+                .any(|(set, levels)| {
+                    set.levels.len() != levels.len()
+                        || set
+                            .levels
+                            .iter()
+                            .zip(levels)
+                            .any(|(path, spec)| !safe_path(path) || path != &spec.path)
+                })
+        {
+            return Err("incompatible level metadata index".into());
+        }
+        Ok(index)
+    }
 }
 pub fn safe_path(path: &str) -> bool {
     !path.is_empty()

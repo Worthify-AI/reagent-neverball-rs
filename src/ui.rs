@@ -1,11 +1,14 @@
 // SPDX-License-Identifier: GPL-3.0-or-later
 //! Menu presentation rebuilt from the running reference and packaged level metadata.
 use macroquad::prelude::*;
+#[cfg(target_arch = "wasm32")]
+use reagent_neverball_rs::content::LevelMetadataIndex;
+#[cfg(not(target_arch = "wasm32"))]
+use reagent_neverball_rs::{content::LevelSet, sol::Sol};
 use reagent_neverball_rs::{
-    content::{Catalog, LevelSet, LevelSpec},
+    content::{Catalog, LevelSpec},
     flow::{self, Flow, Mode, Screen},
     settings::Settings,
-    sol::Sol,
 };
 use std::collections::BTreeMap;
 pub enum ReplayEndAction {
@@ -59,31 +62,43 @@ pub struct Ui {
 }
 impl Ui {
     pub async fn load(root: &str) -> Result<Self, String> {
-        let text = load_string(&format!("{root}/sets.txt"))
-            .await
-            .map_err(|e| e.to_string())?;
-        let mut sets = Vec::new();
-        let mut levels = Vec::new();
-        for file in text
-            .lines()
-            .map(str::trim)
-            .filter(|s| !s.is_empty() && !s.starts_with('#'))
-        {
-            let text = load_string(&format!("{root}/{file}"))
+        #[cfg(target_arch = "wasm32")]
+        let (catalog, levels) = {
+            let text = load_string(&format!("{root}/level-metadata-index.json"))
                 .await
                 .map_err(|e| e.to_string())?;
-            let set = LevelSet::parse(file, &text)?;
-            let mut specs = Vec::new();
-            for path in &set.levels {
-                let bytes = load_file(&format!("{root}/{path}"))
+            let index = LevelMetadataIndex::parse(&text)?;
+            (index.catalog, index.levels)
+        };
+        #[cfg(not(target_arch = "wasm32"))]
+        let (catalog, levels) = {
+            let text = load_string(&format!("{root}/sets.txt"))
+                .await
+                .map_err(|e| e.to_string())?;
+            let mut sets = Vec::new();
+            let mut levels = Vec::new();
+            for file in text
+                .lines()
+                .map(str::trim)
+                .filter(|s| !s.is_empty() && !s.starts_with('#'))
+            {
+                let text = load_string(&format!("{root}/{file}"))
                     .await
                     .map_err(|e| e.to_string())?;
-                let sol = Sol::from_bytes(&bytes).map_err(|e| e.to_string())?;
-                specs.push(LevelSpec::from_sol(path, &sol));
+                let set = LevelSet::parse(file, &text)?;
+                let mut specs = Vec::new();
+                for path in &set.levels {
+                    let bytes = load_file(&format!("{root}/{path}"))
+                        .await
+                        .map_err(|e| e.to_string())?;
+                    let sol = Sol::from_bytes(&bytes).map_err(|e| e.to_string())?;
+                    specs.push(LevelSpec::from_sol(path, &sol));
+                }
+                sets.push(set);
+                levels.push(specs);
             }
-            sets.push(set);
-            levels.push(specs);
-        }
+            (Catalog { sets }, levels)
+        };
         let mut translations = BTreeMap::new();
         for (code, _) in LANGUAGES.iter().filter(|(code, _)| *code != "en") {
             if let Ok(text) = load_string(&format!("{root}/locales/{code}.json")).await {
@@ -93,7 +108,7 @@ impl Ui {
             }
         }
         Ok(Self {
-            catalog: Catalog { sets },
+            catalog,
             levels,
             selected_set: 0,
             selected_level: 0,

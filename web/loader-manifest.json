@@ -1,5 +1,5 @@
 {
-  "wasm_sha256": "39e79bacf04b2e07e7f19c87aa6de679f17682530d7da9c96153e47cde8e1fa7",
+  "wasm_sha256": "3f9e907e6a9f93a29f35f0947b9a9e322d771fcb96972b8ab365a89937265aa6",
   "loader_sha256": "b1fb85dd234af321e160d284893a515a146d7a9d56e484a19f2b740d59ae8524",
   "macroquad": "0.4.14",
   "miniquad": "0.4.8",
@@ -22,5 +22,7 @@
     "boot.js": "e7c95e9b8b48bb49c2748a2b0aa03205d34b460e98241e68730fb6e4b7f71570",
     "save-storage.js": "e7f18b6b243a1f1c7bd5734604466faca0e4f84dee29a1dba79b60d729c7efc2",
     "input-controls.js": "0951f4772227b84a8ba9720c09f75a7a5c067bcfb7e9e365871d700b1a4f7e8f"
-  }
+  },
+  "level_metadata_index_sha256": "bce2d1a6e12b78c9d7b0fdb2868202b37363fd17e5e3d21204ec84780674d82b",
+  "level_metadata_provenance_sha256": "14fe7fb42fbeb1e82f9e38510b216b5e69efd669791a1abda1efd1bdf58a89c7"
 }
