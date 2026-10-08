@@ -24,7 +24,7 @@
   "bridge_files_sha256": {
     "boot.js": "e7c95e9b8b48bb49c2748a2b0aa03205d34b460e98241e68730fb6e4b7f71570",
     "save-storage.js": "e7f18b6b243a1f1c7bd5734604466faca0e4f84dee29a1dba79b60d729c7efc2",
-    "input-controls.js": "8535186785d4eb48d63ff73cba69bec013e9310d4b0ef14e8b987693e4e9fd26",
+    "input-controls.js": "83d58abc3008683ddd50524a31379fd6daf73e736358195ea08af2f58f7b19c1",
     "tilt-controls.js": "cd73a07bfe6924628c1dec553a0ea2202e34e9abeba4458690265c3e66f5b32d"
   },
   "level_metadata_index_sha256": "bce2d1a6e12b78c9d7b0fdb2868202b37363fd17e5e3d21204ec84780674d82b",
