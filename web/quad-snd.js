@@ -67,11 +67,15 @@ function audio_add_buffer(content, content_len) {
     let sound_key = sound_key_next;
     sound_key_next += 1;
 
-    audio_context.decodeAudioData(content_array, function(buffer) {
+    // Handle the Promise as well as decode failure: an unsupported file must
+    // not leave Rust's async sound loader waiting forever.
+    audio_context.decodeAudioData(content_array).then(buffer => {
         sounds.set(sound_key, buffer);
-    }, function(e) {
-        // fail
-        console.error("Failed to decode audio buffer", e);
+    }).catch(error => {
+        console.warn("Audio could not be decoded; continuing with a silent cue.", error);
+        sounds.set(sound_key, audio_context.createBuffer(1, 1, audio_context.sampleRate));
+        const notice = document.querySelector('.control-notice');
+        if (notice) notice.textContent = 'Some audio is unavailable. Gameplay still works.';
     });
     return sound_key;
 }

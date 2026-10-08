@@ -74,3 +74,7 @@ Our independently authored Rust code: GPL-3.0-or-later (LICENSE). Inter font: SI
 - zlib-rs 0.6.8: Zlib; retained notices: web/licenses/zlib-rs-0.6.8/
 
 The self-hosted miniquad browser loader is modified to request a stencil buffer for floor-reflection masks. Its retained license is unchanged; loader-manifest.json records the modified-file hash. Worthify browser bridges provide polygon offset, local storage, controls and screenshot import/export.
+
+## Browser audio derivatives
+
+`data/web-audio/` contains MP3 conversions of the unmodified licensed runtime Ogg recordings for Safari Web Audio compatibility. Original licenses apply unchanged. `data/web-audio/PROVENANCE.json` records original and derivative hashes and the conversion command. No original recordings were replaced. The quad-snd browser loader additionally catches decode failures and completes that cue with silence so unsupported audio cannot block the game.

@@ -1,5 +1,5 @@
 {
-  "wasm_sha256": "3f9e907e6a9f93a29f35f0947b9a9e322d771fcb96972b8ab365a89937265aa6",
+  "wasm_sha256": "bf4589ab01fef77195edb2a59fc76e379f44267db8d232981d708b7c46354451",
   "loader_sha256": "b1fb85dd234af321e160d284893a515a146d7a9d56e484a19f2b740d59ae8524",
   "macroquad": "0.4.14",
   "miniquad": "0.4.8",
@@ -11,7 +11,10 @@
     "crate": "quad-snd",
     "version": "0.2.8",
     "file": "quad-snd.js",
-    "sha256": "764a9bc5634f36d9b508fe2ef6b32befb356b6c797238a8e5cf0d1c881def522"
+    "sha256": "53d084dd332cd07d16b64e81e70c1d87b78abca9c9f5635c79f3c5ec4bfed2a8",
+    "modifications": [
+      "Handle decode rejection and complete failed cues with silence"
+    ]
   },
   "runtime_assets_manifest_sha256": "25f345700a40345a57ab6b9cb99e03f5258bb5ed75990e223019c29ff615ee5f",
   "preferred_form_manifest_sha256": "8ffc54aa21cae5657efaa9f3b137fe63195c18ed9b2fa4dbec306ae962460e79",
@@ -21,8 +24,10 @@
   "bridge_files_sha256": {
     "boot.js": "e7c95e9b8b48bb49c2748a2b0aa03205d34b460e98241e68730fb6e4b7f71570",
     "save-storage.js": "e7f18b6b243a1f1c7bd5734604466faca0e4f84dee29a1dba79b60d729c7efc2",
-    "input-controls.js": "0951f4772227b84a8ba9720c09f75a7a5c067bcfb7e9e365871d700b1a4f7e8f"
+    "input-controls.js": "8535186785d4eb48d63ff73cba69bec013e9310d4b0ef14e8b987693e4e9fd26",
+    "tilt-controls.js": "cd73a07bfe6924628c1dec553a0ea2202e34e9abeba4458690265c3e66f5b32d"
   },
   "level_metadata_index_sha256": "bce2d1a6e12b78c9d7b0fdb2868202b37363fd17e5e3d21204ec84780674d82b",
-  "level_metadata_provenance_sha256": "14fe7fb42fbeb1e82f9e38510b216b5e69efd669791a1abda1efd1bdf58a89c7"
+  "level_metadata_provenance_sha256": "14fe7fb42fbeb1e82f9e38510b216b5e69efd669791a1abda1efd1bdf58a89c7",
+  "browser_audio_provenance_sha256": "446648b57dd52a912575beaa11cecff83cd6b4a3225ae4c0433834fe5169b510"
 }

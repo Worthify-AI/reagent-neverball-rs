@@ -25,7 +25,7 @@ impl SoundBank {
             "coin", "grow", "shrink", "switch", "jump", "goal", "fall", "time", "bump", "bumpbig",
             "bumplil", "menu", "select", "ready", "set", "go", "success", "over", "record",
         ] {
-            let sound = load_sound(&format!("{data_root}/snd/{name}.ogg")).await?;
+            let sound = load_sound(&sound_path(data_root, &format!("snd/{name}.ogg"))).await?;
             effects.insert(name, sound);
         }
         Ok(Self {
@@ -49,7 +49,7 @@ impl SoundBank {
         self.music = None;
         self.music_path = path.into();
         if safe_path(path) {
-            self.music = Some(load_sound(&format!("{}/{path}", self.data_root)).await?);
+            self.music = Some(load_sound(&sound_path(&self.data_root, path)).await?);
         }
         Ok(())
     }
@@ -133,4 +133,14 @@ impl SoundBank {
             }
         }
     }
+}
+
+// Safari Web Audio does not consistently decode the reference Ogg files.
+// Browser-only MP3 derivatives retain their original license and provenance.
+fn sound_path(data_root: &str, path: &str) -> String {
+    #[cfg(target_arch = "wasm32")]
+    if let Some(stem) = path.strip_suffix(".ogg") {
+        return format!("{data_root}/web-audio/{stem}.mp3");
+    }
+    format!("{data_root}/{path}")
 }

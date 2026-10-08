@@ -4,8 +4,9 @@
  const canvas=document.getElementById('glcanvas');
  let touchX=0,touchY=0,pressed=new Map(),pendingReplay=new Uint8Array(0);
  const controls=document.createElement('div');controls.className='game-controls';
- controls.innerHTML='<div class="touch-controls" aria-label="Touch game controls"><div class="direction-pad"><button data-axis="0,1" aria-label="Tilt forward">↑</button><button data-axis="-1,0" aria-label="Tilt left">←</button><button data-axis="0,-1" aria-label="Tilt backward">↓</button><button data-axis="1,0" aria-label="Tilt right">→</button></div><div class="action-buttons"><button data-key="Enter">Select / Start</button><button data-key="Escape">Pause</button><button data-key="KeyR">Restart</button><button data-key="KeyE">Camera</button></div></div><label class="replay-import">Open replay <input type="file" accept=".nbr,.json" aria-label="Open a Neverball replay file"></label><span class="control-notice" role="status"></span>';
+ controls.innerHTML='<div class="touch-controls" aria-label="Touch game controls"><div class="direction-pad"><button data-axis="0,1" aria-label="Tilt forward">↑</button><button data-axis="-1,0" aria-label="Tilt left">←</button><button data-axis="0,-1" aria-label="Tilt backward">↓</button><button data-axis="1,0" aria-label="Tilt right">→</button></div><div class="action-buttons"><button data-key="Enter">Select / Start</button><button data-key="Escape">Pause</button><button data-key="KeyR">Restart</button><button data-key="KeyE">Camera</button></div></div><div class="tilt-controls" aria-label="Device tilt controls"><div class="tilt-buttons"><button class="tilt-enable" aria-pressed="false">Enable tilt</button><button class="tilt-center" disabled>Center tilt</button><a href="index.html" target="_blank" rel="noopener">Open game tab</a></div><span class="tilt-status" role="status" aria-live="polite">Tilt your phone or tablet to steer. Touch arrows also work.</span></div><label class="replay-import">Open replay <input type="file" accept=".nbr,.json" aria-label="Open a Neverball replay file"></label><span class="control-notice" role="status"></span>';
  document.querySelector('footer').append(controls);
+ const tilt=WorthifyTilt.create({enableButton:controls.querySelector('.tilt-enable'),centerButton:controls.querySelector('.tilt-center'),status:controls.querySelector('.tilt-status'),canvas});
  const recalc=()=>{touchX=0;touchY=0;for(const v of pressed.values()){touchX+=v[0];touchY+=v[1];}touchX=Math.max(-1,Math.min(1,touchX));touchY=Math.max(-1,Math.min(1,touchY));};
  for(const button of controls.querySelectorAll('[data-axis]')){
   button.addEventListener('pointerdown',e=>{e.preventDefault();button.setPointerCapture(e.pointerId);pressed.set(e.pointerId,button.dataset.axis.split(',').map(Number));button.classList.add('held');recalc();canvas.focus();});
@@ -26,7 +27,9 @@
  const buttonMap={0:'Enter',1:'Escape',2:'KeyR',3:'KeyE',4:'KeyS',5:'KeyD'};
  const axis=()=>{
   if(pressed.size)return {x:touchX,y:touchY,active:1};
-  if(document.activeElement!==canvas||!navigator.getGamepads)return {x:0,y:0,active:false};
+  if(document.activeElement!==canvas)return {x:0,y:0,active:false};
+  const motion=tilt.axis();if(motion.active)return motion;
+  if(!navigator.getGamepads)return {x:0,y:0,active:false};
   const pad=Array.from(navigator.getGamepads()).find(Boolean);
   if(!pad)return {x:0,y:0,active:false};
   const dead=v=>Math.abs(v)<0.12?0:Math.max(-1,Math.min(1,v));

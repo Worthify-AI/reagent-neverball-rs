@@ -10,7 +10,7 @@ Neverball is a GPL-licensed game by Robert Kooima and contributors. We chose it 
 cargo run --locked --release --bin reagent-neverball-rs
 ```
 
-The default runtime data is `data/`. Arrow keys or mouse movement tilt the floor. `1`/`2`/`3` choose Chase/Lazy/Manual cameras; `S`/`D` rotate, Shift rotates faster, and `E` toggles Chase/Manual. Enter selects, Escape pauses, and `R` restarts. Browser touch controls are outside the game canvas.
+The default runtime data is `data/`. Arrow keys or mouse movement tilt the floor. `1`/`2`/`3` choose Chase/Lazy/Manual cameras; `S`/`D` rotate, Shift rotates faster, and `E` toggles Chase/Manual. Enter selects, Escape pauses, and `R` restarts. Browser touch controls are outside the game canvas. On a phone or tablet, tap **Enable tilt**, allow motion access, then hold comfortably still to center. **Center tilt** resets the neutral angle; portrait and landscape steering are supported. See [browser controls](docs/browser-controls.md).
 
 ```sh
 cargo fmt --check
