@@ -19,6 +19,7 @@ manifest["wasm_sha256"] = hashlib.sha256((web / "reagent_neverball_rs.wasm").rea
 manifest["loader_sha256"] = hashlib.sha256((web / "gl.js").read_bytes()).hexdigest()
 manifest["bridge_files_sha256"] = {f:hashlib.sha256((web / f).read_bytes()).hexdigest() for f in ["boot.js","save-storage.js","input-controls.js","tilt-controls.js"]}
 manifest["runtime_assets_manifest_sha256"] = hashlib.sha256(Path("data/ASSET-MANIFEST.json").read_bytes()).hexdigest()
+manifest["runtime_artwork_provenance_sha256"] = hashlib.sha256(Path("data/runtime-artwork/PROVENANCE.json").read_bytes()).hexdigest()
 manifest["preferred_form_manifest_sha256"] = hashlib.sha256(Path("assets/neverball/source-full/SOURCE-ASSETS.json").read_bytes()).hexdigest()
 manifest["audio_loader"] = {"crate":"quad-snd","version":"0.2.8","file":"quad-snd.js","sha256":hashlib.sha256((web / "quad-snd.js").read_bytes()).hexdigest(),"modifications":["Handle decode rejection and complete failed cues with silence"]}
 manifest["browser_audio_provenance_sha256"] = hashlib.sha256(Path("data/web-audio/PROVENANCE.json").read_bytes()).hexdigest()

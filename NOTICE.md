@@ -25,3 +25,7 @@ Live same-key comparisons start with the compiled level’s initial state. Refer
 Recorded trajectories, component tests and level loading do not imply exact parity for every course, device or rendering setting. Current differences and failed earlier measurements are retained in `COMPARISONS.md`.
 
 Upstream: https://neverball.org/ and https://github.com/Neverball/neverball/blob/master/LICENSE.md
+
+## Runtime texture capture extension
+
+A later bounded runtime-artwork experiment captured texture pixels through OpenGL without reading packaged artwork during construction. A separately authored helper was compiled and launched by ReAgent chat. After capture ended, licensed-asset comparison identified the basic checker ball and its row orientation; normal material loading now uses that recovered derivative. Original assets and manifests remain retained. See `experiments/runtime-artwork/README.md` and `PROVENANCE.json` for authorship, hashes, limits and the separate post-construction audit. This extension does not change the earlier engine-input disclosures above.

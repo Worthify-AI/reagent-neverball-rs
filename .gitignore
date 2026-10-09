@@ -15,3 +15,6 @@
 !fixtures/original-replays/*.nbr
 
 !fixtures/physics/recordings/*.nbr
+
+# Selected licensed capture accompanying the runtime-artwork experiment.
+!experiments/runtime-artwork/captures/event-000023.png

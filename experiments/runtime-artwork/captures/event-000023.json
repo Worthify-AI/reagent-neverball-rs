@@ -1,0 +1,23 @@
+{
+  "event": 23,
+  "unix_time": 1791524108,
+  "status": "captured",
+  "texture": 23,
+  "width": 512,
+  "height": 256,
+  "internal_format": 6410,
+  "upload_format": 6410,
+  "upload_type": 5121,
+  "unpack_buffer": 0,
+  "upload_error": 0,
+  "capture_error": 0,
+  "bytes": 524288,
+  "raw_file": "event-000023.rgba",
+  "channel_expansion": "luminance-alpha: R replicated to RGB; readback alpha retained",
+  "pixel_format": "RGBA8",
+  "row_order": "OpenGL row zero first (t=0); no flip",
+  "provenance": "glGetTexImage after glTexImage2D; no artwork file reads",
+  "gl_version": "4.5 (Compatibility Profile) Mesa 25.2.8-0ubuntu0.24.04.4",
+  "vendor": "Mesa",
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)"
+}

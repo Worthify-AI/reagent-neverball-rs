@@ -1229,9 +1229,16 @@ async fn sol_textures(sol: &Sol, root: &str) -> Result<Vec<Option<Texture2D>>, S
             textures.push(None);
             continue;
         }
-        let path = index
-            .get(&m.texture)
-            .ok_or_else(|| format!("Missing indexed texture {}", m.texture))?;
+        // This one material uses independently captured runtime pixels. Originals
+        // and the public texture index are retained; see runtime-artwork provenance.
+        let path = if m.texture == "ball/basic-ball/basic-ball" {
+            "runtime-artwork/basic-ball-captured.png"
+        } else {
+            index
+                .get(&m.texture)
+                .ok_or_else(|| format!("Missing indexed texture {}", m.texture))?
+                .as_str()
+        };
         let t = load_texture(&format!("{root}/{path}"))
             .await
             .map_err(|e| e.to_string())?;

@@ -1,5 +1,5 @@
 {
-  "wasm_sha256": "bf4589ab01fef77195edb2a59fc76e379f44267db8d232981d708b7c46354451",
+  "wasm_sha256": "d18a8186b08b3656dc0b2a79d7252121522408e18e57df098da8892ff929ddd7",
   "loader_sha256": "b1fb85dd234af321e160d284893a515a146d7a9d56e484a19f2b740d59ae8524",
   "macroquad": "0.4.14",
   "miniquad": "0.4.8",
@@ -29,5 +29,6 @@
   },
   "level_metadata_index_sha256": "bce2d1a6e12b78c9d7b0fdb2868202b37363fd17e5e3d21204ec84780674d82b",
   "level_metadata_provenance_sha256": "14fe7fb42fbeb1e82f9e38510b216b5e69efd669791a1abda1efd1bdf58a89c7",
-  "browser_audio_provenance_sha256": "446648b57dd52a912575beaa11cecff83cd6b4a3225ae4c0433834fe5169b510"
+  "browser_audio_provenance_sha256": "446648b57dd52a912575beaa11cecff83cd6b4a3225ae4c0433834fe5169b510",
+  "runtime_artwork_provenance_sha256": "1251218be22411dffb3b3d41455aa743fea52a25ecbe8ba678bf323ed683f348"
 }

@@ -1,0 +1,36 @@
+{
+  "experiment": "Runtime artwork recovery after source-withheld reconstruction",
+  "authorship": "Original independent coding-agent helper; ReAgent chat compiled/launched the reference; no claim that chat authored the helper",
+  "capture_phase": "Executable/runtime only: helper did not open source artwork, engine source or prior Rust",
+  "identification_phase": "After construction ended: comparison against already-licensed public runtime artwork identified orientation and semantic texture name. No comparison fed back into the construction chat.",
+  "reference_executable_sha256": "e762f51e8c3427786bcb36afe94f62d54e2903a8e04c5c8e06642dce24525410",
+  "helper_source_sha256": "28c44c29e085426bb35f6c1e2ef6be448f0ff9840f3720c6824a39a6ac76a566",
+  "capture_counts": {
+    "records": 97,
+    "captured_uploads": 97,
+    "distinct_rgba_payloads": 90,
+    "failed": 0,
+    "skipped": 0,
+    "raw_bytes": 7983112
+  },
+  "private_complete_capture_manifest_sha256": "94e4b065b0d81baccd8ab5b50d156bea7e309c5173d157b341e4cdafa25e15ed",
+  "complete_flipped_conversion_manifest_sha256": "79533020e26309092074e2491c7df2c26971f23d4c4d1a412296d8c9a3c33651",
+  "selected_event": 23,
+  "dimensions": [
+    512,
+    256
+  ],
+  "alpha_min": 127,
+  "alpha_max": 127,
+  "raw_rgba_sha256": "92cf4e3c6ed874b83922d9dabf50b496ab8fcec73ee6af325d28987ea548fa00",
+  "runtime_asset": "data/runtime-artwork/basic-ball-captured.png",
+  "runtime_asset_sha256": "82562b1a34c661a10ecc21d28971e528d180d6c74bb85a2c86cda508bdcafbaf",
+  "runtime_rgba_sha256": "fcf8327099b0a65ba56d36323596924fd7ba8ad38c8bbaf57cd470fb21b2d249",
+  "transformation": "Vertical row reversal of captured RGBA; lossless PNG encoding; no source image bytes copied",
+  "identified_reference": "data/ball/basic-ball/basic-ball.png",
+  "identified_reference_file_sha256": "dd16b2991f9a7854c2708a8afc92c8cb07fd26ab0d8feb8ecd9906b5d0a2cf21",
+  "license": "Recovered Neverball pixels retain GPL-2.0-or-later; independent helper/code GPL-3.0-or-later under repository LICENSE",
+  "original_files": "Original runtime asset, texture index and existing asset manifests remain unchanged",
+  "distributed_capture_scope": "Only event23 raw pixels, unflipped PNG and sanitized event metadata accompany this provenance; complete capture remains private",
+  "synthetic_tests": "Seven exact RGBA cases including base/sized luminance and luminance-alpha, plus pack/PBO/error/null tests; synthetic pixels are not game artwork"
+}
