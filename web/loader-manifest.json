@@ -1,6 +1,6 @@
 {
   "wasm_sha256": "d18a8186b08b3656dc0b2a79d7252121522408e18e57df098da8892ff929ddd7",
-  "loader_sha256": "b1fb85dd234af321e160d284893a515a146d7a9d56e484a19f2b740d59ae8524",
+  "loader_sha256": "bf878ce3191c6820c1f2018492f6dcb3a93e3aae78cbf161fa61611ef26501de",
   "macroquad": "0.4.14",
   "miniquad": "0.4.8",
   "self_hosted": true,
@@ -19,7 +19,8 @@
   "runtime_assets_manifest_sha256": "25f345700a40345a57ab6b9cb99e03f5258bb5ed75990e223019c29ff615ee5f",
   "preferred_form_manifest_sha256": "8ffc54aa21cae5657efaa9f3b137fe63195c18ed9b2fa4dbec306ae962460e79",
   "loader_modifications": [
-    "Request stencil:true for WebGL1/2 floor-reflection masks"
+    "Request stencil:true for WebGL1/2 floor-reflection masks",
+    "Request alpha:false so translucent scene layers do not leak canvas alpha into page compositing"
   ],
   "bridge_files_sha256": {
     "boot.js": "e7c95e9b8b48bb49c2748a2b0aa03205d34b460e98241e68730fb6e4b7f71570",
